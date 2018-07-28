@@ -105,7 +105,8 @@ $('.button').on('click', function(){
     			});
 			}).resize();
 		
-		worktext.css('opacity', 1);
+		$('#work .text p[data-id=0]').css('display', 'block');
+		$('#work .text p[data-id=0]').delay(1500).animate({opacity:1},350, 'easeOutCubic');
 		
 	}
 });
@@ -119,9 +120,17 @@ $('#next').on('click', function(){
 			var iplus1 = i+1;
 			$('#work li[data-id='+ iplus1 +']').animate({marginLeft:0+'%'},{queue:false, duration:100}, 'easeOutCubic').animate({opacity:1},{queue:false, duration:200}, 'easeOutCubic').animate({backgroundSize:100+'%'},{queue: false, duration:400}, 'easeOutCubic');
 			$('#work li[data-id='+ i +']').delay(500).animate({marginLeft:60+'%'}, 0);
+			$('#work .text p[data-id='+ i +']').css('opacity', 0);
+			$('#work .text p[data-id='+ i +']').css('display', 'none');
+			$('#work .text p[data-id='+ iplus1 +']').css('display', 'block');
+			$('#work .text p[data-id='+ iplus1 +']').animate({opacity:1},{queue:false, duration:350}, 'easeOutCubic');
 		} else if ($('#work li[data-id=9]').css('opacity') === '1') {
 			$('#work li[data-id=9]').animate({backgroundSize:40+'%'},{queue: false, duration:100}, 'easeOutCubic').animate({opacity:0}, {queue: false, duration:200}).animate({marginLeft:-60+'%'},{queue: false, duration:400}, 'easeOutCubic');
 			$('#work li[data-id=0]').animate({marginLeft:0+'%'},{queue:false, duration:100}, 'easeOutCubic').animate({opacity:1},{queue:false, duration:200}, 'easeOutCubic').animate({backgroundSize:100+'%'},{queue: false, duration:400}, 'easeOutCubic');
+			$('#work .text p[data-id=9]').css('opacity', 0);
+			$('#work .text p[data-id=9]').css('display', 'none');
+			$('#work .text p[data-id=0]').css('display', 'block');
+			$('#work .text p[data-id=0]').animate({opacity:1},{queue:false, duration:350}, 'easeOutCubic');
 		}
 	}
 });
@@ -137,9 +146,17 @@ $('#prev').on('click', function(){
 			$('#work li[data-id='+ i +']').animate({backgroundSize:40+'%'},{queue: false, duration:100}, 'easeOutCubic').animate({opacity:0}, {queue: false, duration:200}).animate({marginLeft:60+'%'},{queue: false, duration:400}, 'easeOutCubic');
 			var iplus1 = i+1;
 			$('#work li[data-id='+ iminus1 +']').animate({marginLeft:0+'%'},{queue:false, duration:100}, 'easeOutCubic').animate({opacity:1},{queue:false, duration:200}, 'easeOutCubic').animate({backgroundSize:100+'%'},{queue: false, duration:400}, 'easeOutCubic');
+			$('#work .text p[data-id='+ i +']').css('opacity', 0);
+			$('#work .text p[data-id='+ i +']').css('display', 'none');
+			$('#work .text p[data-id='+ iminus1 +']').css('display', 'block');
+			$('#work .text p[data-id='+ iminus1 +']').animate({opacity:1},{queue:false, duration:350}, 'easeOutCubic');
 		} else if ($('#work li[data-id=0]').css('opacity') === '1') {
 			$('#work li[data-id=0]').animate({backgroundSize:40+'%'},{queue: false, duration:100}, 'easeOutCubic').animate({opacity:0}, {queue: false, duration:200}).animate({marginLeft:60+'%'},{queue: false, duration:400}, 'easeOutCubic');
 			$('#work li[data-id=9]').animate({marginLeft:0+'%'},{queue:false, duration:100}, 'easeOutCubic').animate({opacity:1},{queue:false, duration:200}, 'easeOutCubic').animate({backgroundSize:100+'%'},{queue: false, duration:400}, 'easeOutCubic');
+			$('#work .text p[data-id=0]').css('opacity', 0);
+			$('#work .text p[data-id=0]').css('display', 'none');
+			$('#work .text p[data-id=9]').css('display', 'block');
+			$('#work .text p[data-id=9]').animate({opacity:1},{queue:false, duration:350}, 'easeOutCubic');
 		}
 	}
 });
