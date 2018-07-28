@@ -276,18 +276,18 @@ h4 {
 }
 
 #work #project0 {
-	background-image:url(../pappy/play26.jpg);
+	background-image:url(play26.jpg);
 	background-size:100%;
 	opacity:1;
 	margin-left:0%;
 }
 
 #work #project2 {
-	background-image:url(../pappy/FLV1.jpeg);
+	background-image:url(FLV1.jpeg);
 }
 
 #work #project3 {
-	background-image:url(../pappy/matt1blur.jpg);
+	background-image:url(matt1blur.jpg);
 }
 
 #work li {
@@ -295,7 +295,7 @@ h4 {
 	position:absolute;
 	top:0;
 	left:0;
-	background-image:url(../pappy/vitebsk.jpg);
+	background-image:url(vitebsk.jpg);
 	background-size:40%;
 	background-repeat:no-repeat;
 	background-position:center;
