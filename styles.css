@@ -6,9 +6,15 @@ body {
 	height:100%;
 	margin:0;
   	padding:0;
-	overflow:hidden;
 }
 
+#container {
+	width:100%;
+	overflow-x:hidden;
+	position:absolute;
+	top:0;
+	left:0;
+}
 
 
 /*navigation*/
@@ -18,9 +24,10 @@ body {
 	width:20em;
 	background-color:white;
 	display:inline-block;
+	position:fixed;
 	float:left;
 	border-right: 1px dashed rgba(170,170,170,1.0);
-	z-index:20;
+	z-index:3;
 }
 
 h1 {
@@ -35,7 +42,7 @@ h1 a {
 }
 
 h1 a:hover {
-	cursor:crosshair;
+	cursor:pointer;
 }
 
 h4 {
@@ -51,7 +58,6 @@ h4 {
 
 #nav li {
 	width:40%;
-	
 	transition: all 200ms ease-in-out 0s;
 	-webkit-transition: all 200ms ease-in-out 0s;
     -moz-transition: all 200ms ease-in-out 0s;
@@ -59,8 +65,17 @@ h4 {
 }
 
 #nav li:hover {
-	cursor:crosshair;
+	cursor:pointer;
 	margin-left:5px;
+	color:rgba(156,156,156,1.00);
+}
+
+#contact a {
+	text-decoration:none;
+	color:rgba(0,0,0,1.00);
+}
+
+#contact a:hover {
 	color:rgba(156,156,156,1.00);
 }
 
@@ -82,7 +97,7 @@ h4 {
 
 .fa:hover {
     opacity: 0.6;
-	cursor:crosshair;
+	cursor:pointer;
 }
 
 .fa-facebook {
@@ -102,45 +117,26 @@ h4 {
 
 #main {
 	width:calc(100% - 20em - 1px);
-	height:100vh;
-	
+	margin-left:20em;
 	display:inline-block;
 	float:left;
-}
-
-#about {
-	width:100%;
-	height:inherit;
-	z-index:1;
-	position:absolute;
+	overflow:scroll;
 }
 
 .text {
 	position:relative;
-	width: 100%;
-	height:20%;
-	margin-left: 0;
+	width: calc(100% + 2px);
+	min-height:20%;
+	margin-left: -1px;
 	background-color:white;
-}
-
-#abouttext {
-	text-align:center;
-	opacity:0;
-	padding-top:20px;
-	margin: 0 40px;
-	color:#bc2a8d;
-	
-	transition: all 250ms ease-in-out 1.3s;
-	-webkit-transition: all 250ms ease-in-out 1.3s;
-    -moz-transition: all 250ms ease-in-out 1.3s;
-	-o-transition: all 250ms ease-in-out 1.3s;
+	padding-bottom:5em;
 }
 
 .title {
 	position:absolute;
 	width: 50%;
 	background-color:white;
-	margin-left:-13%;
+	margin-left:-15%;
 	margin-top:-13%;
 	top:-50%;
 	z-index:1;
@@ -152,113 +148,20 @@ h4 {
 	transform: rotate(-25deg);
 }
 
-#abouttitle {
-	margin-left:-10%;
-	margin-top:85%;
-	font-size:35px;
-	color:#bc2a8d;
-	opacity:0;
-	
-	-moz-transform: rotate(25deg);  
-	-o-transform: rotate(25deg);  
-	-webkit-transform: rotate(25deg);  
-	-ms-transform: rotate(0deg);  
-	transform: rotate(25deg);
-	
-	transition: all 250ms ease-in-out 0.8s;
-	-webkit-transition: all 250ms ease-in-out 0.8s;
-    -moz-transition: all 250ms ease-in-out 0.8s;
-	-o-transition: all 250ms ease-in-out 0.8s;
+#socials {
+	display:none;
+	background-color:white;
+	height:5em;
+	width:100%;
 }
 
-#aboutimg {
-	position:absolute;
-	width: calc(0.7071*(100% - 20em));
-	background-color:rgba(201,64,154,1.00);
-	background-image:url(../pappy/about.jpg);
-	background-size:cover;
-	margin-left:calc(0.14645*(100% - 20em));
-	z-index:-2;
-}
+/* Work */
 
 #work {
-	width:100%;
+	width:calc(100% - 20em);
 	height:inherit;
 	z-index:1;
 	position:absolute;
-}
-
-#workimg {
-	position:absolute;
-	width: calc(0.7071*(100% - 20em));
-	margin-left:calc(0.14645*(100% - 20em));
-	z-index:-2;
-}
-
-#worktitle {
-	margin-left:-10%;
-	margin-top:85%;
-	font-size:35px;
-	color:rgba(70,140,231,1.00);
-	opacity:0;
-	
-	-moz-transform: rotate(25deg);  
-	-o-transform: rotate(25deg);  
-	-webkit-transform: rotate(25deg);  
-	-ms-transform: rotate(0deg);  
-	transform: rotate(25deg);
-	
-	transition: all 250ms ease-in-out 0.8s;
-	-webkit-transition: all 250ms ease-in-out 0.8s;
-    -moz-transition: all 250ms ease-in-out 0.8s;
-	-o-transition: all 250ms ease-in-out 0.8s;
-}
-
-.worktext {
-	text-align:center;
-	opacity:0;
-	padding-top:20px;
-	margin: 0 40px;
-	color:rgba(70,140,231,1.00);
-}
-
-#next {
-	position:absolute;
-	top:calc(50% - 40px);
-	color:rgba(70,140,231,1.00);
-	z-index:3;
-	margin:0;
-	right:-15%;
-}
-
-#prev {
-	position:absolute;
-	color:rgba(70,140,231,1.00);
-	top:calc(50% - 40px);
-	z-index:3;
-	margin:0;
-	left: -15%;
-}
-
-#next:hover {
-	color:rgba(170,170,170,1.0);
-	border-bottom:1px dashed rgba(170,170,170,1.0);
-	cursor:pointer;
-}
-
-#prev:hover {
-	color:rgba(170,170,170,1.0);
-	border-bottom:1px dashed rgba(170,170,170,1.0);
-	cursor:pointer;
-}
-
-#prev {
-	position:absolute;
-	color:rgba(70,140,231,1.00);
-	top:calc(50% - 40px);
-	z-index:3;
-	margin:0;
-	left: -15%;
 }
 
 #work ul {
@@ -276,7 +179,7 @@ h4 {
 }
 
 #work #project0 {
-	background-image:url(play26.jpg);
+	background-image:url(One%20For%20The%20Road/1.jpg);
 	background-size:100%;
 	opacity:1;
 	margin-left:0%;
@@ -303,3 +206,214 @@ h4 {
 	margin-left:60%;
 }
 
+#workimg {
+	position:absolute;
+	width: calc(70.71%);
+	z-index:-2;
+	max-width:700px;
+	left: 50%;
+	
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);  
+	-o-transform: translateX(-50%);   
+	-ms-transform: translateX(-50%);  
+	transform: translateX(-50%);
+}
+
+#worktitle {
+	margin-left:-10%;
+	margin-top:85%;
+	font-size:50px;
+	color:rgba(70,140,231,1.00);
+	opacity:0;
+	
+	-moz-transform: rotate(25deg);  
+	-o-transform: rotate(25deg);  
+	-webkit-transform: rotate(25deg);  
+	-ms-transform: rotate(0deg);  
+	transform: rotate(25deg);
+
+}
+
+.worktext {
+	text-align:center;
+	opacity:0;
+	padding-top:20px;
+	margin: 0 40px;
+	color:rgba(70,140,231,1.00);
+}
+
+#next {
+	position:relative;
+	color:rgba(70,140,231,1.00);
+	z-index:3;
+	margin:auto;
+	text-align:center;
+	top:50%;
+	display:none;
+	opacity:0;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);  
+	-o-transform: translateY(-50%);   
+	-ms-transform: translateY(-50%);  
+	transform: translateY(-50%);
+}
+
+#prev {
+	color:rgba(70,140,231,1.00);
+	z-index:3;
+	margin:auto;
+	text-align:center;
+	top:50%;
+	display:none;
+	opacity:0;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);  
+	-o-transform: translateY(-50%);   
+	-ms-transform: translateY(-50%);  
+	transform: translateY(-50%);
+	position:relative;
+}
+
+#next:hover {
+	color:rgba(170,170,170,1.0);
+	cursor:pointer;
+}
+
+#prev:hover {
+	color:rgba(170,170,170,1.0);
+	cursor:pointer;
+}
+
+#pprojholder {
+	height:100vh;
+	width:14.645%;
+	position:absolute;
+}
+
+#nprojholder {
+	height:100vh;
+	width:14.645%;
+	position:absolute;
+	right:0;
+}
+
+.pprev {
+	bottom:15%;
+	position:absolute;
+	left: -1px;
+	background:white;
+}
+
+.pprev p {
+	color:rgba(0,0,0,1.00);
+	margin:0px 15px;
+	position:relative;
+	font-size:34px;
+	z-index:3;
+	cursor:pointer;
+}
+
+.pnext {
+	bottom:15%;
+	position:absolute;
+	right: -1px;
+	background:white;
+	z-index:3;
+	cursor:pointer;
+}
+
+.pnext p {
+	color:rgba(0,0,0,1.00);
+	margin:0px 15px;
+	position:relative;
+	font-size:34px;
+}
+
+.pjob {
+	bottom:15%;
+	position:absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);  
+	-o-transform: translateX(-50%);   
+	-ms-transform: translateX(-50%);  
+	transform: translateX(-50%);
+	background:white;
+}
+
+.pjob p {
+	color:rgba(0,0,0,1.00);
+	margin:5px 10px;
+	position:relative;
+	font-size:15px;
+}
+
+
+.ptitle {
+	bottom:15%;
+	position:absolute;
+	left: 50%;
+	text-align:center;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);  
+	-o-transform: translateX(-50%);   
+	-ms-transform: translateX(-50%);  
+	transform: translateX(-50%);
+	background:white;
+}
+
+.ptitle p {
+	color:rgba(0,0,0,1.00);
+	margin:5px 10px;
+	position:relative;
+	font-size:28px;
+}
+
+/* About */
+
+#about {
+	width:calc(100% - 20em);
+	height:inherit;
+	z-index:-1;
+	position:absolute;
+}
+
+#abouttext {
+	text-align:center;
+	opacity:0;
+	padding-top:20px;
+	margin: 0 40px;
+	color:#bc2a8d;
+	
+}
+
+#abouttitle {
+	margin-left:-10%;
+	margin-top:85%;
+	font-size:50px;
+	color:#bc2a8d;
+	opacity:0;
+	
+	-moz-transform: rotate(25deg);  
+	-o-transform: rotate(25deg);  
+	-webkit-transform: rotate(25deg);  
+	-ms-transform: rotate(0deg);  
+	transform: rotate(25deg);
+}
+
+#aboutimg {
+	position:absolute;
+	width: calc(70.71%);
+	background-color:rgba(201,64,154,1.00);
+	background-image:url(../pappy/about.jpg);
+	background-size:cover;
+	z-index:-2;
+	max-width:700px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);  
+	-o-transform: translateX(-50%);   
+	-ms-transform: translateX(-50%);  
+	transform: translateX(-50%);
+}

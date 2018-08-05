@@ -4,6 +4,7 @@ $(document).ready( function() {
 
 	var aboutimg = $('#aboutimg');
 	var workimg = $('#workimg');
+	var container = $('#container');
 	var abouttext = $('#abouttext');
 	var worktext = $('.worktext');
 	var abouttitle = $('#abouttitle');
@@ -14,16 +15,21 @@ $(document).ready( function() {
 	var title = $('.title');
 	var text = $('.text');
 	var width3 = aboutimg.width();
+	var width4 = workimg.width();
 	var width = text.width();
 	var width2 = abouttitle.width();
 	var height = $('#main').height();
 	var fullheight = $(window).height();
+	var projtitleheight = $('.ptitle').height();
 	
 	aboutimg.css('top', -width3);
-	workimg.css('top', -width3);
+	workimg.css('top', -width4);
+	container.css('height', width4);
 	text.css('top', width3);
 	text.css('display', 'none');
 	$('#work li').css('height', width3);
+	$('.pjob').css('margin-bottom', projtitleheight);
+	
 
 $(window).ready(updateHeight);
 $(window).resize(updateHeight);
@@ -32,6 +38,7 @@ function updateHeight()
 {
 	var aboutimg = $('#aboutimg');
 	var workimg = $('#workimg');
+	var container = $('#container');
 	var abouttext = $('#abouttext');
 	var worktext = $('.worktext');
 	var abouttitle = $('#abouttitle');
@@ -41,43 +48,48 @@ function updateHeight()
 	var title = $('.title');
 	var text = $('.text');
 	var width3 = aboutimg.width();
+	var width4 = workimg.width();
 	var width = text.width();
 	var width2 = title.width();
 	var height = $('#main').height();
+	var projtitleheight = $('.ptitle').height();
 	
 	aboutimg.css('height', width3);
-	workimg.css('height', width3);
+	workimg.css('height', width4);
+	container.css('height', width4);
 	title.css('height', width2);
 	projectimg.css('height', 0.8*width3);
-	$('#work li').css('height', width3);
+	$('#work li').css('height', width4);
+	$('.pjob').css('margin-bottom', projtitleheight);
 }
 
 
 
 
 $('.button').on('click', function(){
-	$('#work').animate({opacity: 0}, 0);
-	$('#about').animate({opacity: 0}, 0);
-	$('#aboutimg').animate({top: -width3}, 0);
-	$('#workimg').animate({top: -width3}, 0);
-	$('.text').animate({top: width3}, 0);
+	$('#work').css('opacity', 0);
+	$('#about').css('opacity', 0);
+	$('#aboutimg').css('top', -width3);
+	$('#workimg').css('top', -width3);
+	
 	$('.title').animate({top: -50 +'%'}, 0);
-	text.css('display', "");
+	text.css('display', 'none');
 	abouttitle.css('opacity', 0);
 	worktitle.css('opacity', 0);
-	worktext.animate({opacity: 0}, 0);
-	abouttext.animate({opacity: 0}, 0);
+	worktext.css('opacity', 0);
+	abouttext.css('opacity', 0);
 	
 	if ($(this).is('#aboutb')) {
 		
+		
+		$('#aboutimg .text').css({'top': width3, display : 'block'});
 		$('#work').css('z-index',-10);
 		$('#about').css('z-index',"");
 		$('#about').animate({opacity: 1}, 0);
-		abouttitle.css('opacity', 1);
-		abouttext.css('opacity', 1);
+		abouttitle.delay(800).animate({opacity:1},250);
 	
-		$('.text').delay(600).animate({top: 80 + '%'}, 600, 'easeOutBounce');
-		$('.title').delay(300).animate({top:-25 + '%'}, 600, 'easeOutBounce');
+		$('#aboutimg .text').delay(600).animate({top: 85 + '%'}, 600, 'easeOutBounce');
+		$('#aboutimg .title').delay(300).animate({top:-25 + '%'}, 600, 'easeOutBounce');
 		$('#aboutimg').animate({top:($(window).height() - $('#aboutimg').height())/2}, 600, 'easeOutBack');
 	
 		$(window).on('resize', function () {
@@ -85,19 +97,28 @@ $('.button').on('click', function(){
           	  return ($(window).height() - $(this).height())/2;
     			});
 			}).resize();
+			
+		abouttext.delay(1200).animate({opacity:1},300, 'easeOutCubic');
 		
 		
 		
 	} else if ($(this).is('#workb')) {
 	
-		$('#about').css('z-index',-10);
-		$('#work').css('z-index',"");
+		$('#workimg .text').css({'top': width4, display : 'block'});
+		$('#about').css('z-index',-1);
+		$('#work').css('z-index',0);
+		$('#nav').css('z-index', 1);
 	    $('#work').animate({opacity: 1}, 0);
-		worktitle.css('opacity', 1);
+		worktitle.delay(800).animate({opacity:1},250);
+		$('#work li').css({'margin-left':"", 'opacity':"", 'background-size':""});
+		$('#prev').css({'display':'block', 'opacity':0});
+		$('#next').css({'display':'block', 'opacity':0});
+		$('#next').delay(1000).css('display','block').animate({opacity:1},300);
+		$('#prev').delay(1000).css('display','block').animate({opacity:1},300);
 	
-		$('.text').delay(600).animate({top: 80 + '%'}, 600, 'easeOutBounce');
-		$('.title').delay(300).animate({top:-25 + '%'}, 600, 'easeOutBounce');
-		$('#workimg').animate({top:(fullheight - width3)/2}, 600, 'easeOutBack');
+		$('#workimg .text').delay(600).animate({top: 85 + '%'}, 600, 'easeOutBounce');
+		$('#workimg .title').delay(300).animate({top:-25 + '%'}, 600, 'easeOutBounce');
+		$('#workimg').animate({top:($(window).height() - $('#workimg').height())/2}, 600, 'easeOutBack');
 	
 		$(window).on('resize', function () {
    		$('#workimg').css('top', function () {
@@ -106,7 +127,7 @@ $('.button').on('click', function(){
 			}).resize();
 		
 		$('#work .text p[data-id=0]').css('display', 'block');
-		$('#work .text p[data-id=0]').delay(1500).animate({opacity:1},350, 'easeOutCubic');
+		$('#work .text p[data-id=0]').delay(1200).animate({opacity:1},300, 'easeOutCubic');
 		
 	}
 });
@@ -160,6 +181,85 @@ $('#prev').on('click', function(){
 		}
 	}
 });
+
+var n = 1;
+
+$('#project0 .pnext').on('click', function(){
+	
+	if (n === 7) {
+		$('#project0').css('background-image', 'url("http://localhost/emma/One%20For%20The%20Road/1.jpg")' );
+		n=1;
+	} else if (n !== 7) {
+			var nplus1 = n+1;
+			$('#project0').css('background-image', 'url("http://localhost/emma/One%20For%20The%20Road/'+ nplus1 +'.jpg")' );
+			$('#project0').css('background-image', 'One%20For%20The%20Road/'+ nplus1 +'.jpg' );
+			n = nplus1;
+	}
+});
+
+$('#project0 .pprev').on('click', function(){
+	
+	if (n === 1) {
+		$('#project0').css('background-image', 'url("http://localhost/emma/One%20For%20The%20Road/7.jpg")' );
+		n=7;
+	} else if (n !== 1) {
+			var nminus1 = n-1;
+			$('#project0').css('background-image', 'url("http://localhost/emma/One%20For%20The%20Road/'+ nminus1 +'.jpg")' );
+			$('#project0').css('background-image', 'One%20For%20The%20Road/'+ nminus1 +'.jpg' );
+			n = nminus1;
+	}
+});
+
+if (matchMedia) {
+  var mq = window.matchMedia("(max-width: 460px)"); 
+  mq.addListener(WidthChange);
+  WidthChange(mq);
+}
+
+function WidthChange(mq) {
+	$(window).on('resize', function () {
+		if (mq.matches) {
+			
+			$('.button').on('click', function () {
+				var holdertop = $('#workimg').offset().top;
+				$('#pprojholder').css('top', holdertop);
+				$('#nprojholder').css('top', holdertop);
+			});
+			
+			
+				var holdertop = $('#workimg').offset().top;
+				$('#pprojholder').css('top', holdertop);
+				$('#nprojholder').css('top', holdertop);
+			
+		} else {
+			$('#pprojholder').css('top', "");
+			$('#nprojholder').css('top', "");
+		}
+		
+	}).resize();
+}
+
+function preloadImages(array) {
+    if (!preloadImages.list) {
+        preloadImages.list = [];
+    }
+    var list = preloadImages.list;
+    for (var i = 0; i < array.length; i++) {
+        var img = new Image();
+        img.onload = function() {
+            var index = list.indexOf(this);
+            if (index !== -1) {
+                // remove image from the array once it's loaded
+                // for memory consumption reasons
+                list.splice(index, 1);
+            }
+		}
+        list.push(img);
+        img.src = array[i];
+    }
+} 
+
+preloadImages(["http://localhost/emma/One%20For%20The%20Road/1.jpg", "http://localhost/emma/One%20For%20The%20Road/2.jpg", "http://localhost/emma/One%20For%20The%20Road/3.jpg", "http://localhost/emma/One%20For%20The%20Road/4.jpg", "http://localhost/emma/One%20For%20The%20Road/5.jpg", "http://localhost/emma/One%20For%20The%20Road/6.jpg", "http://localhost/emma/One%20For%20The%20Road/7.jpg"]);
 
 jQuery.easing['jswing'] = jQuery.easing['swing'];
 
