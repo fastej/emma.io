@@ -259,7 +259,7 @@ function preloadImages(array) {
     }
 } 
 
-preloadImages(["http://localhost/emma/One%20For%20The%20Road/1.jpg", "http://localhost/emma/One%20For%20The%20Road/2.jpg", "http://localhost/emma/One%20For%20The%20Road/3.jpg", "http://localhost/emma/One%20For%20The%20Road/4.jpg", "http://localhost/emma/One%20For%20The%20Road/5.jpg", "http://localhost/emma/One%20For%20The%20Road/6.jpg", "http://localhost/emma/One%20For%20The%20Road/7.jpg"]);
+preloadImages(["One%20For%20The%20Road/1.jpg", "One%20For%20The%20Road/2.jpg", "One%20For%20The%20Road/3.jpg", "One%20For%20The%20Road/4.jpg", "One%20For%20The%20Road/5.jpg", "One%20For%20The%20Road/6.jpg", "One%20For%20The%20Road/7.jpg"]);
 
 jQuery.easing['jswing'] = jQuery.easing['swing'];
 
