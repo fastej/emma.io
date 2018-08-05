@@ -187,11 +187,11 @@ var n = 1;
 $('#project0 .pnext').on('click', function(){
 	
 	if (n === 7) {
-		$('#project0').css('background-image', 'url("http://localhost/emma/One%20For%20The%20Road/1.jpg")' );
+		$('#project0').css('background-image', 'url("One%20For%20The%20Road/1.jpg")' );
 		n=1;
 	} else if (n !== 7) {
 			var nplus1 = n+1;
-			$('#project0').css('background-image', 'url("http://localhost/emma/One%20For%20The%20Road/'+ nplus1 +'.jpg")' );
+			$('#project0').css('background-image', 'url("One%20For%20The%20Road/'+ nplus1 +'.jpg")' );
 			$('#project0').css('background-image', 'One%20For%20The%20Road/'+ nplus1 +'.jpg' );
 			n = nplus1;
 	}
@@ -200,11 +200,11 @@ $('#project0 .pnext').on('click', function(){
 $('#project0 .pprev').on('click', function(){
 	
 	if (n === 1) {
-		$('#project0').css('background-image', 'url("http://localhost/emma/One%20For%20The%20Road/7.jpg")' );
+		$('#project0').css('background-image', 'url("One%20For%20The%20Road/7.jpg")' );
 		n=7;
 	} else if (n !== 1) {
 			var nminus1 = n-1;
-			$('#project0').css('background-image', 'url("http://localhost/emma/One%20For%20The%20Road/'+ nminus1 +'.jpg")' );
+			$('#project0').css('background-image', 'url("One%20For%20The%20Road/'+ nminus1 +'.jpg")' );
 			$('#project0').css('background-image', 'One%20For%20The%20Road/'+ nminus1 +'.jpg' );
 			n = nminus1;
 	}
