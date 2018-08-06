@@ -139,12 +139,14 @@ $('#next').on('click', function(){
 		if ($('#work li[data-id='+ i +']').css('opacity') === '1') {
 			$('#work li[data-id='+ i +']').animate({backgroundSize:40+'%'},{queue: false, duration:100}, 'easeOutCubic').animate({opacity:0}, {queue: false, duration:200}).animate({marginLeft:-60+'%'},{queue: false, duration:400}, 'easeOutCubic');
 			var iplus1 = i+1;
+			var newprojtitleheight = $('#work li[data-id='+ iplus1 +'] .ptitle').height();
 			$('#work li[data-id='+ iplus1 +']').animate({marginLeft:0+'%'},{queue:false, duration:100}, 'easeOutCubic').animate({opacity:1},{queue:false, duration:200}, 'easeOutCubic').animate({backgroundSize:100+'%'},{queue: false, duration:400}, 'easeOutCubic');
 			$('#work li[data-id='+ i +']').delay(500).animate({marginLeft:60+'%'}, 0);
 			$('#work .text p[data-id='+ i +']').css('opacity', 0);
 			$('#work .text p[data-id='+ i +']').css('display', 'none');
 			$('#work .text p[data-id='+ iplus1 +']').css('display', 'block');
 			$('#work .text p[data-id='+ iplus1 +']').animate({opacity:1},{queue:false, duration:350}, 'easeOutCubic');
+			$('.pjob').css('margin-bottom', newprojtitleheight);
 		} else if ($('#work li[data-id=9]').css('opacity') === '1') {
 			$('#work li[data-id=9]').animate({backgroundSize:40+'%'},{queue: false, duration:100}, 'easeOutCubic').animate({opacity:0}, {queue: false, duration:200}).animate({marginLeft:-60+'%'},{queue: false, duration:400}, 'easeOutCubic');
 			$('#work li[data-id=0]').animate({marginLeft:0+'%'},{queue:false, duration:100}, 'easeOutCubic').animate({opacity:1},{queue:false, duration:200}, 'easeOutCubic').animate({backgroundSize:100+'%'},{queue: false, duration:400}, 'easeOutCubic');
@@ -152,6 +154,7 @@ $('#next').on('click', function(){
 			$('#work .text p[data-id=9]').css('display', 'none');
 			$('#work .text p[data-id=0]').css('display', 'block');
 			$('#work .text p[data-id=0]').animate({opacity:1},{queue:false, duration:350}, 'easeOutCubic');
+			$('.pjob').css('margin-bottom', $('#work li[data-id=0] .ptitle').height());
 		}
 	}
 });
@@ -163,6 +166,7 @@ $('#prev').on('click', function(){
 	for (i = 0; i < 10; i++) {
 		if ($('#work li[data-id='+ i +']').css('opacity') === '1') {
 			var iminus1 = i-1;
+			var oldprojtitleheight = $('#work li[data-id='+ iminus1 +'] .ptitle').height();
 			$('#work li[data-id='+ iminus1 +']').animate({marginLeft:-60+'%'}, 0);
 			$('#work li[data-id='+ i +']').animate({backgroundSize:40+'%'},{queue: false, duration:100}, 'easeOutCubic').animate({opacity:0}, {queue: false, duration:200}).animate({marginLeft:60+'%'},{queue: false, duration:400}, 'easeOutCubic');
 			var iplus1 = i+1;
@@ -171,6 +175,7 @@ $('#prev').on('click', function(){
 			$('#work .text p[data-id='+ i +']').css('display', 'none');
 			$('#work .text p[data-id='+ iminus1 +']').css('display', 'block');
 			$('#work .text p[data-id='+ iminus1 +']').animate({opacity:1},{queue:false, duration:350}, 'easeOutCubic');
+			$('.pjob').css('margin-bottom', oldprojtitleheight);
 		} else if ($('#work li[data-id=0]').css('opacity') === '1') {
 			$('#work li[data-id=0]').animate({backgroundSize:40+'%'},{queue: false, duration:100}, 'easeOutCubic').animate({opacity:0}, {queue: false, duration:200}).animate({marginLeft:60+'%'},{queue: false, duration:400}, 'easeOutCubic');
 			$('#work li[data-id=9]').animate({marginLeft:0+'%'},{queue:false, duration:100}, 'easeOutCubic').animate({opacity:1},{queue:false, duration:200}, 'easeOutCubic').animate({backgroundSize:100+'%'},{queue: false, duration:400}, 'easeOutCubic');
@@ -178,6 +183,7 @@ $('#prev').on('click', function(){
 			$('#work .text p[data-id=0]').css('display', 'none');
 			$('#work .text p[data-id=9]').css('display', 'block');
 			$('#work .text p[data-id=9]').animate({opacity:1},{queue:false, duration:350}, 'easeOutCubic');
+			$('.pjob').css('margin-bottom', $('#work li[data-id=9] .ptitle').height());
 		}
 	}
 });

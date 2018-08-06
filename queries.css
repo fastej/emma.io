@@ -83,7 +83,7 @@ h4 {
 
 #nav li {
 	display:inline-block;
-	width:calc(25% - 4px);
+	width:calc(25% - 8px);
 	text-align:center;
 }
 
@@ -117,6 +117,14 @@ h4 {
 	transform: translateX(-50%);
 }
 	
+.worktext {
+	margin: 0 15px;
+}
+
+#abouttext {
+	margin: 0 15px;
+}
+
 #socials {
 	width:100%;
 	text-align:center;
