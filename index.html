@@ -8,7 +8,7 @@
 <link href="queries.css" media="screen and (max-width: 1299px)" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,400,500,600,700" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script> 
 <script src="emma.js" type="text/javascript"></script>
 <!--<script type="text/javascript">
@@ -24,8 +24,9 @@ if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)
     	<h1><a href="index.html">Emma Baggott</a></h1>
         <h4>theatre director</h4>
         <ul>
+        	<li id="landingb" class="button" style="color:rgba(70,140,231,1.00);font-weight:300;">what i'm up to &lt</li>
         	<li id="aboutb" class="button">about</li>
-            <li id="workb" class="button">work</li>
+            <li id="workb" class="button">previous work</li>
             <li>cv</li>
             <li id="contact"><a href="mailto:emmabaggott1983@gmail.com">contact</a></li>
         </ul>
@@ -36,6 +37,71 @@ if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)
         </div>
     </div>
     <div id="main">
+        <div id="landing">
+        	<div id="pholder">
+            </div>
+            <div id="nholder">
+            	 <p id="justdoneop" class="landingop">just done</p> 
+                 <p id="currentlyop" class="landingop" style="color:rgba(70,140,231,1.00);font-weight:300;">&gt currently</p>
+                 <p id="doingnextop" class="landingop">doing next</p>
+            </div>
+        	<div id="landingimg">
+            	<div class="title">
+                	<p id="landingtitle">currently</p>
+            	</div>
+                <div id="container">
+                <ul>
+                	<li id="then" data-id="0">
+                    	<div class="ptitle">
+                        	<p>One For The Road</p>
+                        </div>
+                        <div class="pjob">
+                        	<p>Assistant Director</p>
+                        </div>
+                        <div class="pprev">
+                        	<p class="arrow">&lt</p>
+                        </div>
+                        <div class="pnext">
+                        	<p class="arrow">&gt</p>
+                        </div>
+                    </li>
+                	<li id="now" data-id="1">
+                    	<div class="ptitle">
+                        	<p>Aladdin</p>
+                        </div>
+                        <div class="pjob">
+                        	<p>Assistant Director</p>
+                        </div>
+                        <div class="pprev">
+                        	<p class="arrow">&lt</p>
+                        </div>
+                        <div class="pnext">
+                        	<p class="arrow">&gt</p>
+                        </div>
+                    </li>
+                    <li id="future" data-id="2">
+                    	<div class="ptitle">
+                        	<p>The Village</p>
+                        </div>
+                        <div class="pjob">
+                        	<p>Assistant Director</p>
+                        </div>
+                        <div class="pprev">
+                        	<p class="arrow">&lt</p>
+                        </div>
+                        <div class="pnext">
+                        	<p class="arrow">&gt</p>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+                <div class="text">
+                	<p class="landingtext" data-id="0">Written by Harold Pinter <br>Director: Jeff James<br>Designer: Alex Lowde<br>Lighting Designer: Mischa Twitchin<br>Sound Designer:  David McSeveney<br>Photographer: Sheila Burnet</p>
+                    <p class="landingtext" data-id="1">Aladdin written by Andrew Pollard<br>Director: Ryan McBryde<br>Designer: Juliet Shillingford<br>Choreographer: Grant Murphy<br>Musical Director: Christopher Peake<br>Lighting Designer: Matt Haskins<br>Sound Designer: Mark Noble<br>Photographer: Robert Workman<br></p>
+                    <p class="landingtext" data-id="2">Written by April De Angelis<br>Director: Nadia Fall<br>Designer: Joanna Scotcher<br>Lighting Designer: Paul Pyant<br>Movement Director: Polly Bennett<br>Composer: Niraj Chag<br>Sound Designer: Helen Atkinson<br>Fight Directors: RC-Annie<br></p>
+            	</div>
+            </div>
+        </div>
     	<div id="about">
         	<div id="aboutimg">
             	<div class="title">
@@ -48,17 +114,23 @@ if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)
             </div>
         </div>
         <div id="work">
-        	<div id="pprojholder">
-            	<p id="prev">previous<br>project</p>
-            </div>
+        	<div id="pprojholder"></div>
             <div id="nprojholder">
-            	 <p id="next">next<br>project</p>
+            	 <p id="roadop" class="workop" style="color:rgba(127,216,5,1.00);font-weight:300;">&gt one for the road</p>
+            	 <p id="normalop" class="workop">normal</p> 
+                 <p id="pruop" class="workop">the pru project</p>
+                 <p id="scanartistsop" class="workop">scan artists</p>
+                 <p id="thehwordop" class="workop">the h word</p> 
+                 <p id="thishouseop" class="workop">this house</p>
+                 <p id="mcqueenop" class="workop">mcqueen</p>
+                 <p id="yellowop" class="workop">the sound of yellow</p> 
+                 <p id="thevillageop" class="workop">the village</p>
             </div>
         	<div id="workimg">
             	<div class="title">
                 	<p id="worktitle">work</p>
             	</div>
-                <div id="container">
+                <div id="containerwork">
                 <ul>
                 	<li id="project0" data-id="0">
                     	<div class="ptitle">
@@ -68,24 +140,24 @@ if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)
                         	<p>Assistant Director</p>
                         </div>
                         <div class="pprev">
-                        	<p>&lt</p>
+                        	<p class="arrow">&lt</p>
                         </div>
                         <div class="pnext">
-                        	<p>&gt</p>
+                        	<p class="arrow">&gt</p>
                         </div>
                     </li>
                 	<li id="project1" data-id="1">
                     	<div class="ptitle">
-                        	<p>Aladdin</p>
+                        	<p>the pru project</p>
                         </div>
                         <div class="pjob">
-                        	<p>Assistant Director</p>
+                        	<p>Director</p>
                         </div>
                         <div class="pprev">
-                        	<p>&lt</p>
+                        	<p class="arrow">&lt</p>
                         </div>
                         <div class="pnext">
-                        	<p>&gt</p>
+                        	<p class="arrow">&gt</p>
                         </div>
                     </li>
                     <li id="project2" data-id="2">
@@ -96,10 +168,10 @@ if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)
                         	<p>Assistant Director</p>
                         </div>
                         <div class="pprev">
-                        	<p>&lt</p>
+                        	<p class="arrow">&lt</p>
                         </div>
                         <div class="pnext">
-                        	<p>&gt</p>
+                        	<p class="arrow">&gt</p>
                         </div>
                     </li>
                     <li id="project3" data-id="3">
@@ -110,10 +182,10 @@ if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)
                         	<p>Associate Director</p>
                         </div>
                         <div class="pprev">
-                        	<p>&lt</p>
+                        	<p class="arrow">&lt</p>
                         </div>
                         <div class="pnext">
-                        	<p>&gt</p>
+                        	<p class="arrow">&gt</p>
                         </div>
                     </li>
                     <li id="project4" data-id="4">
@@ -124,10 +196,10 @@ if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)
                         	<p>Associate Director</p>
                         </div>
                         <div class="pprev">
-                        	<p>&lt</p>
+                        	<p class="arrow">&lt</p>
                         </div>
                         <div class="pnext">
-                        	<p>&gt</p>
+                        	<p class="arrow">&gt</p>
                         </div>
                     </li>
                     <li id="project5" data-id="5">
@@ -138,10 +210,10 @@ if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)
                         	<p>Associate Director</p>
                         </div>
                         <div class="pprev">
-                        	<p>&lt</p>
+                        	<p class="arrow">&lt</p>
                         </div>
                         <div class="pnext">
-                        	<p>&gt</p>
+                        	<p class="arrow">&gt</p>
                         </div>
                     </li>
                     <li id="project6" data-id="6">
@@ -152,10 +224,10 @@ if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)
                         	<p>Director</p>
                         </div>
                         <div class="pprev">
-                        	<p>&lt</p>
+                        	<p class="arrow">&lt</p>
                         </div>
                         <div class="pnext">
-                        	<p>&gt</p>
+                        	<p class="arrow">&gt</p>
                         </div>
                     </li>
                     <li id="project7" data-id="7">
@@ -166,10 +238,10 @@ if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)
                         	<p>Director</p>
                         </div>
                         <div class="pprev">
-                        	<p>&lt</p>
+                        	<p class="arrow">&lt</p>
                         </div>
                         <div class="pnext">
-                        	<p>&gt</p>
+                        	<p class="arrow">&gt</p>
                         </div>
                     </li>
                     <li id="project8" data-id="8">
@@ -180,24 +252,10 @@ if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)
                         	<p>Director</p>
                         </div>
                         <div class="pprev">
-                        	<p>&lt</p>
+                        	<p class="arrow">&lt</p>
                         </div>
                         <div class="pnext">
-                        	<p>&gt</p>
-                        </div>
-                    </li>
-                    <li id="project9" data-id="9">
-                    	<div class="ptitle">
-                        	<p>Mcqueen</p>
-                        </div>
-                        <div class="pjob">
-                        	<p>Assistant Director</p>
-                        </div>
-                        <div class="pprev">
-                        	<p>&lt</p>
-                        </div>
-                        <div class="pnext">
-                        	<p>&gt</p>
+                        	<p class="arrow">&gt</p>
                         </div>
                     </li>
                 </ul>

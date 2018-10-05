@@ -7,6 +7,10 @@
 	font-size:40px;
 }
 
+#landingtitle {
+	font-size:33px;
+}
+
 #abouttitle {
 	font-size:40px;
 }
@@ -18,6 +22,10 @@
 	
 #worktitle {
 	font-size:30px;
+}
+
+#landingtitle {
+	font-size:23px;
 }
 
 #abouttitle {
@@ -33,6 +41,14 @@
 }
 
 #prev {
+	font-size:12px;
+}
+
+#nextwork {
+	font-size:12px;
+}
+
+#prevwork {
 	font-size:12px;
 }
 
@@ -104,6 +120,19 @@ h4 {
 	transform: translateX(-50%);
 }
 
+#landing {
+	width: 80%;
+	top:0;
+	z-index:0;
+	
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);  
+	-o-transform: translateX(-50%);   
+	-ms-transform: translateX(-50%);  
+	transform: translateX(-50%);
+}
+
 #about {
 	width: 80%;
 	top:0;
@@ -118,6 +147,10 @@ h4 {
 }
 	
 .worktext {
+	margin: 0 15px;
+}
+
+.landingtext {
 	margin: 0 15px;
 }
 
@@ -165,6 +198,16 @@ h4 {
 	width:27%;
 }
 
+#pholder {
+	left:-12.5%;
+	width:27%;
+}
+
+#nholder {
+	right:-12.5%;
+	width:27%;
+}
+
 #next {
 	font-size:15px;
 }
@@ -173,12 +216,27 @@ h4 {
 	font-size:15px;
 }
 
+#nextwork {
+	font-size:15px;
+}
+
+#prevwork {
+	font-size:15px;
+}
+
+#landingtitle {
+	font-size:20px;
+}
 }
 
 @media screen and (max-width: 550px) {
 
 #worktitle {
 	font-size:24px;
+}
+
+#landingtitle {
+	font-size:18px;
 }
 
 #abouttitle {
@@ -200,33 +258,70 @@ h4 {
 #pprojholder {
 	height:3em;
 	margin-top:-3em;
-	z-index:-1;
+	z-index:1;
+	background:none;
 }
 
 #nprojholder {
 	height:3em;
 	margin-top:-3em;
-	z-index:-1;
-}	
+	z-index:1;
+	background:none;
+}
+
+#pholder {
+	height:3em;
+	margin-top:-3em;
+	z-index:1;
+	background:none;
+}
+
+#nholder {
+	height:3em;
+	margin-top:-3em;
+	z-index:1;
+	background:none;
+}		
 
 #prev {
 	font-size:12px;
+	font-weight:400;
 }
 
 #next {
 	font-size:12px;
+	font-weight:400;
+}
+
+#prevwork {
+	font-size:12px;
+	font-weight:400;
+}
+
+#nextwork {
+	font-size:12px;
+	font-weight:400;
 }
 	
 #workimg {
 	margin-top:2.5em;
 	width:100%;
 	z-index:0;
-	
+}
+
+#landingimg {
+	margin-top:2.5em;
+	width:100%;
+	z-index:0;
 }
 	
 #aboutimg {
 	margin-top:2.5em;
 	width:100%;
+}
+
+#abouttext, .worktext, .landingtext {
+	font-weight:300;
 }
 
 .title {
@@ -244,7 +339,7 @@ h4 {
 	transform: none;
 }
 
-#worktitle, #abouttitle {
+#worktitle, #abouttitle, #landingtitle {
 	margin-left:0;
 	margin-top:0.75em;
 	font-size:34px;

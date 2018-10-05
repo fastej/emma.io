@@ -8,14 +8,13 @@ body {
   	padding:0;
 }
 
-#container {
+#containerwork {
 	width:100%;
 	overflow-x:hidden;
 	position:absolute;
 	top:0;
 	left:0;
 }
-
 
 /*navigation*/
 
@@ -59,11 +58,11 @@ h4 {
 }
 
 #nav li {
-	width:40%;
-	transition: all 200ms ease-in-out 0s;
-	-webkit-transition: all 200ms ease-in-out 0s;
-    -moz-transition: all 200ms ease-in-out 0s;
-	-o-transition: all 200ms ease-in-out 0s;
+	width:60%;
+	transition: margin-left 200ms ease-in-out 0s;
+	-webkit-transition: margin-left 200ms ease-in-out 0s;
+    -moz-transition: margin-left 200ms ease-in-out 0s;
+	-o-transition: margin-left 200ms ease-in-out 0s;
 	font-weight:100;
 }
 
@@ -168,6 +167,189 @@ h4 {
 	width:100%;
 }
 
+/* Landing */
+
+#landing {
+	width:calc(100% - 20em);
+	height:inherit;
+	z-index:2;
+	position:absolute;
+	opacity:0;
+	
+}
+
+#landing ul {
+	list-style-type:none;
+	color:white;
+	margin-top:0;
+	padding:0;
+	width:100%;
+	position:absolute;
+}
+
+#landing li {
+	width:inherit;
+	position:absolute;
+	top:0;
+	left:0;
+	background-size:40%;
+	background-image:url(FLV1.jpeg);
+	background-repeat:no-repeat;
+	background-position:center;
+	opacity:0;
+	margin-left:-60%;
+}
+
+#landing #now {
+	background-image:url(One%20For%20The%20Road/1.jpg);
+	background-size:100%;
+	opacity:1;
+	margin-left:0%;
+}
+
+#pholder {
+	height:100vh;
+	width:14.645%;
+	position:absolute;
+	background-color:white;
+}
+
+#nholder {
+	height:100vh;
+	width:14.645%;
+	position:absolute;
+	right:0;
+	background-color:white;
+}
+
+.landingop {
+	width:100%;
+	display:inline-block;
+	margin:0;
+	position:relative;
+	margin-left:-30px;
+	text-align:right;
+	font-weight:200;
+	
+	transition: margin-left 200ms ease-in-out 0s, font-weight 0ms ease-in-out 0s;
+	-webkit-transition: margin-left 200ms ease-in-out 0s, font-weight 0ms ease-in-out 0s;
+    -moz-transition: margin-left 200ms ease-in-out 0s, font-weight 0ms ease-in-out 0s;
+	-o-transition: margin-left 200ms ease-in-out 0s, font-weight 0ms ease-in-out 0s;
+}
+
+.landingop:hover {
+	margin-left:-45px;
+	cursor:pointer;
+	color:rgba(70,140,231,1.00);
+	font-weight:300;
+}
+
+#next {
+	position:relative;
+	color:rgba(70,140,231,1.00);
+	z-index:3;
+	margin:auto;
+	text-align:center;
+	top:50%;
+	font-weight:100;
+	
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);  
+	-o-transform: translateY(-50%);   
+	-ms-transform: translateY(-50%);  
+	transform: translateY(-50%);
+}
+
+#prev {
+	color:rgba(70,140,231,1.00);
+	z-index:3;
+	margin:auto;
+	text-align:center;
+	top:50%;
+	font-weight:100;	
+	
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);  
+	-o-transform: translateY(-50%);   
+	-ms-transform: translateY(-50%);  
+	transform: translateY(-50%);
+	position:relative;
+}
+
+#next:hover {
+	color:rgba(170,170,170,1.0);
+	cursor:pointer;
+}
+
+#prev:hover {
+	color:rgba(170,170,170,1.0);
+	cursor:pointer;
+}
+
+#landingimg {
+	position:absolute;
+	width: calc(70.71%);
+	z-index:0;
+	max-width:700px;
+	left: 50%;
+	
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);  
+	-o-transform: translateX(-50%);   
+	-ms-transform: translateX(-50%);  
+	transform: translateX(-50%);
+}
+
+#landingimg .text {
+	top:85%;
+	display:block;
+}
+
+#landingimg .title {
+	top:-25%;
+}
+
+#landingimg .text p[data-id="1"] {
+	opacity:1;
+	display:block;
+}
+
+#landingtitle {
+	margin-left:-22%;
+	margin-top:80%;
+	font-size:38px;
+	font-weight:300;
+	color:rgba(70,140,231,1.00);
+	
+	-moz-transform: rotate(25deg);  
+	-o-transform: rotate(25deg);  
+	-webkit-transform: rotate(25deg);  
+	-ms-transform: rotate(0deg);  
+	transform: rotate(25deg);
+}
+
+#container {
+	width:100%;
+	overflow-x:hidden;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.landingtext {
+	text-align:center;
+	opacity:0;
+	padding-top:20px;
+	margin: 0 40px;
+	color:rgba(70,140,231,1.00);
+	font-weight:300;
+}
+
+#landing .text p {
+	opacity:0;
+	display:none;
+}
+
 /* Work */
 
 #work {
@@ -203,7 +385,23 @@ h4 {
 }
 
 #work #project3 {
-	background-image:url(matt1blur.jpg);
+	background-image:url(This%20House/1.jpg);
+}
+
+#work #project4 {
+	background-image:url(Mcqueen/1.jpg);
+}
+
+#work #project5 {
+	background-image:url(The%20Sound%20Of%20Yellow/1.jpg);
+}
+
+#work #project7 {
+	background-image:url(The%20H%20Word/1.jpg);
+}
+
+#work #project8 {
+	background-image:url(Normal/1.jpg);
 }
 
 #work li {
@@ -238,7 +436,7 @@ h4 {
 	margin-top:85%;
 	font-size:50px;
 	font-weight:300;
-	color:rgba(70,140,231,1.00);
+	color:rgba(127,216,5,1.00);
 	opacity:0;
 	
 	-moz-transform: rotate(25deg);  
@@ -254,13 +452,36 @@ h4 {
 	opacity:0;
 	padding-top:20px;
 	margin: 0 40px;
-	color:rgba(70,140,231,1.00);
-	font-weight:100;
+	color:rgba(127,216,5,1.00);
+	font-weight:300;
 }
 
-#next {
+.workop {
+	width:100%;
+	margin:0;
 	position:relative;
-	color:rgba(70,140,231,1.00);
+	margin-left:-30px;
+	text-align:right;
+	font-weight:200;
+	display:none;
+	opacity:0;
+	
+	transition: margin-left 200ms ease-in-out 0s, font-weight 0ms ease-in-out 0s;
+	-webkit-transition: margin-left 200ms ease-in-out 0s, font-weight 0ms ease-in-out 0s;
+    -moz-transition: margin-left 200ms ease-in-out 0s, font-weight 0ms ease-in-out 0s;
+	-o-transition: margin-left 200ms ease-in-out 0s, font-weight 0ms ease-in-out 0s;
+}
+
+.workop:hover {
+	margin-left:-45px;
+	cursor:pointer;
+	color:rgba(127,216,5,1.00);
+	font-weight:300;
+}
+
+#nextwork {
+	position:relative;
+	color:rgba(127,216,5,1.00);
 	z-index:3;
 	margin:auto;
 	text-align:center;
@@ -276,8 +497,8 @@ h4 {
 	transform: translateY(-50%);
 }
 
-#prev {
-	color:rgba(70,140,231,1.00);
+#prevwork {
+	color:rgba(127,216,5,1.00);
 	z-index:3;
 	margin:auto;
 	text-align:center;
@@ -294,12 +515,12 @@ h4 {
 	position:relative;
 }
 
-#next:hover {
+#nextwork:hover {
 	color:rgba(170,170,170,1.0);
 	cursor:pointer;
 }
 
-#prev:hover {
+#prevwork:hover {
 	color:rgba(170,170,170,1.0);
 	cursor:pointer;
 }
@@ -410,7 +631,7 @@ h4 {
 	padding-top:20px;
 	margin: 0 40px;
 	color:#bc2a8d;
-	font-weight:100;
+	font-weight:300;
 	
 }
 
