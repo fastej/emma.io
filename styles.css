@@ -64,6 +64,7 @@ h4 {
     -moz-transition: margin-left 200ms ease-in-out 0s;
 	-o-transition: margin-left 200ms ease-in-out 0s;
 	font-weight:100;
+	font-size:14px;
 }
 
 #nav li:hover {
@@ -132,11 +133,12 @@ h4 {
 	margin-left: -1px;
 	background-color:white;
 	padding-bottom:5em;
+	font-size:14px;
 }
 
 .text p a {
 	text-decoration:none;
-	color:rgba(70,140,231,1.00);
+	color:rgba(127,216,5,1.00);
 }
 
 .text p a:hover{
@@ -175,7 +177,6 @@ h4 {
 	z-index:2;
 	position:absolute;
 	opacity:0;
-	
 }
 
 #landing ul {
@@ -230,6 +231,7 @@ h4 {
 	margin-left:-30px;
 	text-align:right;
 	font-weight:200;
+	font-size:14px;
 	
 	transition: margin-left 200ms ease-in-out 0s, font-weight 0ms ease-in-out 0s;
 	-webkit-transition: margin-left 200ms ease-in-out 0s, font-weight 0ms ease-in-out 0s;
@@ -288,7 +290,7 @@ h4 {
 
 #landingimg {
 	position:absolute;
-	width: calc(70.71%);
+	width: calc(60%);
 	z-index:0;
 	max-width:700px;
 	left: 50%;
@@ -315,9 +317,9 @@ h4 {
 }
 
 #landingtitle {
-	margin-left:-22%;
-	margin-top:80%;
-	font-size:38px;
+	margin-left:-20%;
+	margin-top:82%;
+	font-size:32px;
 	font-weight:300;
 	color:rgba(70,140,231,1.00);
 	
@@ -380,28 +382,28 @@ h4 {
 	margin-left:0%;
 }
 
-#work #project2 {
-	background-image:url(FLV1.jpeg);
+#work #project1 {
+	background-image:url(Normal/1.jpg);
 }
 
-#work #project3 {
-	background-image:url(This%20House/1.jpg);
+#work #project2 {
+	background-image:url(The%20PRU%20Project/1.jpg);
 }
 
 #work #project4 {
-	background-image:url(Mcqueen/1.jpg);
-}
-
-#work #project5 {
-	background-image:url(The%20Sound%20Of%20Yellow/1.jpg);
-}
-
-#work #project7 {
 	background-image:url(The%20H%20Word/1.jpg);
 }
 
-#work #project8 {
-	background-image:url(Normal/1.jpg);
+#work #project5 {
+	background-image:url(This%20House/1.jpg);
+}
+
+#work #project6 {
+	background-image:url(Mcqueen/1.jpg);
+}
+
+#work #project7 {
+	background-image:url(The%20Sound%20Of%20Yellow/1.jpg);
 }
 
 #work li {
@@ -419,7 +421,7 @@ h4 {
 
 #workimg {
 	position:absolute;
-	width: calc(70.71%);
+	width: calc(60%);
 	z-index:0;
 	max-width:700px;
 	left: 50%;
@@ -460,9 +462,10 @@ h4 {
 	width:100%;
 	margin:0;
 	position:relative;
-	margin-left:-30px;
+	margin-left:-25px;
 	text-align:right;
 	font-weight:200;
+	font-size:14px;
 	display:none;
 	opacity:0;
 	
@@ -473,7 +476,7 @@ h4 {
 }
 
 .workop:hover {
-	margin-left:-45px;
+	margin-left:-40px;
 	cursor:pointer;
 	color:rgba(127,216,5,1.00);
 	font-weight:300;
@@ -538,6 +541,34 @@ h4 {
 	position:absolute;
 	right:0;
 	background-color:white;
+}
+
+#counter {
+	display:none;
+	position:absolute;
+	top:0;
+	width:100%;
+	height:2em;
+	background-color:white;
+	margin-top:-2em;
+}
+
+#counter p {
+	position:relative;
+	color:rgba(127,216,5,1.00);
+	margin:auto;
+	text-align:center;
+	top:50%;
+	display:block;
+	opacity:0;
+	font-size:12px;
+	font-weight:300;
+	
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);  
+	-o-transform: translateY(-50%);   
+	-ms-transform: translateY(-50%);  
+	transform: translateY(-50%);
 }
 
 .pprev {
@@ -612,7 +643,7 @@ h4 {
 	color:rgba(0,0,0,1.00);
 	margin:5px 10px;
 	position:relative;
-	font-size:28px;
+	font-size:24px;
 	font-weight:300;
 }
 
@@ -638,7 +669,7 @@ h4 {
 #abouttitle {
 	margin-left:-10%;
 	margin-top:85%;
-	font-size:50px;
+	font-size:45px;
 	font-weight:300;
 	color:#bc2a8d;
 	opacity:0;
@@ -652,7 +683,7 @@ h4 {
 
 #aboutimg {
 	position:absolute;
-	width: calc(70.71%);
+	width: calc(60%);
 	background-color:rgba(201,64,154,1.00);
 	background-image:url(../pappy/about.jpg);
 	background-size:cover;

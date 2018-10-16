@@ -42,7 +42,7 @@ if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)
             </div>
             <div id="nholder">
             	 <p id="justdoneop" class="landingop">just done</p> 
-                 <p id="currentlyop" class="landingop" style="color:rgba(70,140,231,1.00);font-weight:300;">&gt currently</p>
+                 <p id="currentlyop" class="landingop" style="color:rgba(70,140,231,1.00);font-weight:300;">currently &lt</p>
                  <p id="doingnextop" class="landingop">doing next</p>
             </div>
         	<div id="landingimg">
@@ -114,9 +114,9 @@ if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)
             </div>
         </div>
         <div id="work">
-        	<div id="pprojholder"></div>
+        	<div id="pprojholder"><p id="prevwork">&lt back</p></div>
             <div id="nprojholder">
-            	 <p id="roadop" class="workop" style="color:rgba(127,216,5,1.00);font-weight:300;">&gt one for the road</p>
+            	 <p id="roadop" class="workop" style="color:rgba(127,216,5,1.00);font-weight:300;">one for the road &lt</p>
             	 <p id="normalop" class="workop">normal</p> 
                  <p id="pruop" class="workop">the pru project</p>
                  <p id="scanartistsop" class="workop">scan artists</p>
@@ -125,7 +125,9 @@ if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)
                  <p id="mcqueenop" class="workop">mcqueen</p>
                  <p id="yellowop" class="workop">the sound of yellow</p> 
                  <p id="thevillageop" class="workop">the village</p>
+                 <p id="nextwork">next &gt</p>
             </div>
+            <div id="counter"><p id="counterp">1/9</p></div>
         	<div id="workimg">
             	<div class="title">
                 	<p id="worktitle">work</p>
@@ -146,105 +148,7 @@ if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)
                         	<p class="arrow">&gt</p>
                         </div>
                     </li>
-                	<li id="project1" data-id="1">
-                    	<div class="ptitle">
-                        	<p>the pru project</p>
-                        </div>
-                        <div class="pjob">
-                        	<p>Director</p>
-                        </div>
-                        <div class="pprev">
-                        	<p class="arrow">&lt</p>
-                        </div>
-                        <div class="pnext">
-                        	<p class="arrow">&gt</p>
-                        </div>
-                    </li>
-                    <li id="project2" data-id="2">
-                    	<div class="ptitle">
-                        	<p>The Village</p>
-                        </div>
-                        <div class="pjob">
-                        	<p>Assistant Director</p>
-                        </div>
-                        <div class="pprev">
-                        	<p class="arrow">&lt</p>
-                        </div>
-                        <div class="pnext">
-                        	<p class="arrow">&gt</p>
-                        </div>
-                    </li>
-                    <li id="project3" data-id="3">
-                    	<div class="ptitle">
-                        	<p>This House UK Tour</p>
-                        </div>
-                        <div class="pjob">
-                        	<p>Associate Director</p>
-                        </div>
-                        <div class="pprev">
-                        	<p class="arrow">&lt</p>
-                        </div>
-                        <div class="pnext">
-                        	<p class="arrow">&gt</p>
-                        </div>
-                    </li>
-                    <li id="project4" data-id="4">
-                    	<div class="ptitle">
-                        	<p>Mcqueen</p>
-                        </div>
-                        <div class="pjob">
-                        	<p>Associate Director</p>
-                        </div>
-                        <div class="pprev">
-                        	<p class="arrow">&lt</p>
-                        </div>
-                        <div class="pnext">
-                        	<p class="arrow">&gt</p>
-                        </div>
-                    </li>
-                    <li id="project5" data-id="5">
-                    	<div class="ptitle">
-                        	<p>The Sound of Yellow</p>
-                        </div>
-                        <div class="pjob">
-                        	<p>Associate Director</p>
-                        </div>
-                        <div class="pprev">
-                        	<p class="arrow">&lt</p>
-                        </div>
-                        <div class="pnext">
-                        	<p class="arrow">&gt</p>
-                        </div>
-                    </li>
-                    <li id="project6" data-id="6">
-                    	<div class="ptitle">
-                        	<p>Scan Artists</p>
-                        </div>
-                        <div class="pjob">
-                        	<p>Director</p>
-                        </div>
-                        <div class="pprev">
-                        	<p class="arrow">&lt</p>
-                        </div>
-                        <div class="pnext">
-                        	<p class="arrow">&gt</p>
-                        </div>
-                    </li>
-                    <li id="project7" data-id="7">
-                    	<div class="ptitle">
-                        	<p>The H Word</p>
-                        </div>
-                        <div class="pjob">
-                        	<p>Director</p>
-                        </div>
-                        <div class="pprev">
-                        	<p class="arrow">&lt</p>
-                        </div>
-                        <div class="pnext">
-                        	<p class="arrow">&gt</p>
-                        </div>
-                    </li>
-                    <li id="project8" data-id="8">
+                    <li id="project1" data-id="1">
                     	<div class="ptitle">
                         	<p>Normal</p>
                         </div>
@@ -258,19 +162,116 @@ if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)
                         	<p class="arrow">&gt</p>
                         </div>
                     </li>
+                	<li id="project2" data-id="2">
+                    	<div class="ptitle">
+                        	<p>the pru project</p>
+                        </div>
+                        <div class="pjob">
+                        	<p>Director</p>
+                        </div>
+                        <div class="pprev">
+                        	<p class="arrow">&lt</p>
+                        </div>
+                        <div class="pnext">
+                        	<p class="arrow">&gt</p>
+                        </div>
+                    </li>
+                    <li id="project3" data-id="3">
+                    	<div class="ptitle">
+                        	<p>Scan Artists</p>
+                        </div>
+                        <div class="pjob">
+                        	<p>Director</p>
+                        </div>
+                        <div class="pprev">
+                        	<p class="arrow">&lt</p>
+                        </div>
+                        <div class="pnext">
+                        	<p class="arrow">&gt</p>
+                        </div>
+                    </li>
+                    <li id="project4" data-id="4">
+                    	<div class="ptitle">
+                        	<p>The H Word</p>
+                        </div>
+                        <div class="pjob">
+                        	<p>Director</p>
+                        </div>
+                        <div class="pprev">
+                        	<p class="arrow">&lt</p>
+                        </div>
+                        <div class="pnext">
+                        	<p class="arrow">&gt</p>
+                        </div>
+                    </li>
+                    <li id="project5" data-id="5">
+                    	<div class="ptitle">
+                        	<p>This House UK Tour</p>
+                        </div>
+                        <div class="pjob">
+                        	<p>Associate Director</p>
+                        </div>
+                        <div class="pprev">
+                        	<p class="arrow">&lt</p>
+                        </div>
+                        <div class="pnext">
+                        	<p class="arrow">&gt</p>
+                        </div>
+                    </li>
+                    <li id="project6" data-id="6">
+                    	<div class="ptitle">
+                        	<p>Mcqueen</p>
+                        </div>
+                        <div class="pjob">
+                        	<p>Associate Director</p>
+                        </div>
+                        <div class="pprev">
+                        	<p class="arrow">&lt</p>
+                        </div>
+                        <div class="pnext">
+                        	<p class="arrow">&gt</p>
+                        </div>
+                    </li>
+                    <li id="project7" data-id="7">
+                    	<div class="ptitle">
+                        	<p>The Sound of Yellow</p>
+                        </div>
+                        <div class="pjob">
+                        	<p>Associate Director</p>
+                        </div>
+                        <div class="pprev">
+                        	<p class="arrow">&lt</p>
+                        </div>
+                        <div class="pnext">
+                        	<p class="arrow">&gt</p>
+                        </div>
+                    </li>
+                    <li id="project8" data-id="8">
+                    	<div class="ptitle">
+                        	<p>The Village</p>
+                        </div>
+                        <div class="pjob">
+                        	<p>Assistant Director</p>
+                        </div>
+                        <div class="pprev">
+                        	<p class="arrow">&lt</p>
+                        </div>
+                        <div class="pnext">
+                        	<p class="arrow">&gt</p>
+                        </div>
+                    </li>
                 </ul>
                 </div>
                 <div class="text">
-                	<p class="worktext" data-id="0">Written by Harold Pinter <br>Director: Jeff James<br>Designer: Alex Lowde<br>Lighting Designer: Mischa Twitchin<br>Sound Designer:  David McSeveney<br>Photographer: Sheila Burnet</p>
-                    <p class="worktext" data-id="1">Aladdin written by Andrew Pollard<br>Director: Ryan McBryde<br>Designer: Juliet Shillingford<br>Choreographer: Grant Murphy<br>Musical Director: Christopher Peake<br>Lighting Designer: Matt Haskins<br>Sound Designer: Mark Noble<br>Photographer: Robert Workman<br></p>
-                    <p class="worktext" data-id="2">Written by April De Angelis<br>Director: Nadia Fall<br>Designer: Joanna Scotcher<br>Lighting Designer: Paul Pyant<br>Movement Director: Polly Bennett<br>Composer: Niraj Chag<br>Sound Designer: Helen Atkinson<br>Fight Directors: RC-Annie<br></p>
-                    <p class="worktext" data-id="3">Written by James Graham<br>Director: Jeremy Herrin & Jonathan O’Boyle <br>Designer: Rae Smith<br>Lighting Designer: Paule Constable<br>Tour Lighting Designer: Pen Pickersgill<br>Sound Designer: Ian Dickson for Autograph<br>Composer: Stephen Warbeck <br>Movement Director Scott Ambler <br>Photographer: Johan Persson <br></p>
-                    <p class="worktext" data-id="4">Written by James Philipps<br>Theatre Royal Haymarket<br>Director: John Caird<br>Designer: David Farley<br>Lighting Designer: David Howe<br>Sound Designer: John Leonard<br>Video & Projection Designer: Tim Bird<br> Photographer: ©Specular<br></p>
-                    <p class="worktext" data-id="5">Created by the company, written by Francesca Beard<br>Young Vic<br>Director: Matthew Xia<br>Designer: Samal Blak<br>Lighting Designer: Ciaran Cunningham<br> Sound Designer: Giles Thomas<br>Photographer: Helen Murray<br></p>
-                    <p class="worktext" data-id="6">Written by Evan Placey<br>The Yard<br>Designer: Sussannah Henry<br> Lighting Designer:<br>Sound Designer: The Company<br> Photographer: Richard Davenport<br></p>
-                    <p class="worktext" data-id="7">Written by David Watson<br>Shakespeare in Shoreditch Festival<br>Set Designer: Liz Marsden<br>Sound Designer: Giles Thomas<br>Costume Designer: Kelly Ryan<br>Photographer: Camilla Greenwell<br></p>
-                    <p class="worktext" data-id="8">Written by Anthony Neilson<br>Styx<br>Designer: Grace Smart<br>Lighting Designer: Ciaran Cunningham<br>Sound Designer: Giles Thomas<br>Photographer: Ciaran Cunningham<br><br><a href="https://www.theguardian.com/stage/2017/mar/19/normal-review-styx-london"> ‘Emma Baggott leads an astute, clever revival of Anthony Neilson’s play…She draws fine performances from all three actors'…  Lyn Gardner - The Guardian</a></p>
-                    <p class="worktext" data-id="9">blah blah blah blah blah blah blah blah blah </p>
+                	<p class="worktext" data-id="0">Written by Harold Pinter <br>Director: Jeff James<br>Designer: Alex Lowde<br>Lighting Designer: Mischa Twitchin<br>Sound Designer: David McSeveney<br>Photographer: Sheila Burnet</p>
+                    <p class="worktext" data-id="2">PRU PROJECT</p>
+                    <p class="worktext" data-id="8">Written by April De Angelis<br>Director: Nadia Fall<br>Designer: Joanna Scotcher<br>Lighting Designer: Paul Pyant<br>Movement Director: Polly Bennett<br>Composer: Niraj Chag<br>Sound Designer: Helen Atkinson<br>Fight Directors: RC-Annie<br></p>
+                    <p class="worktext" data-id="5">Written by James Graham<br>Director: Jeremy Herrin & Jonathan O’Boyle <br>Designer: Rae Smith<br>Lighting Designer: Paule Constable<br>Tour Lighting Designer: Pen Pickersgill<br>Sound Designer: Ian Dickson for Autograph<br>Composer: Stephen Warbeck <br>Movement Director Scott Ambler <br>Photographer: Johan Persson <br></p>
+                    <p class="worktext" data-id="6">Written by James Philipps<br>Theatre Royal Haymarket<br>Director: John Caird<br>Designer: David Farley<br>Lighting Designer: David Howe<br>Sound Designer: John Leonard<br>Video & Projection Designer: Tim Bird<br>Photographer: ©Specular<br></p>
+                    <p class="worktext" data-id="7">Created by the company, written by Francesca Beard<br>Young Vic<br>Director: Matthew Xia<br>Designer: Samal Blak<br>Lighting Designer: Ciaran Cunningham<br> Sound Designer: Giles Thomas<br>Photographer: Helen Murray<br></p>
+                    <p class="worktext" data-id="3">Written by Evan Placey<br>The Yard<br>Designer: Sussannah Henry<br> Lighting Designer:<br>Sound Designer: The Company<br> Photographer: Richard Davenport<br></p>
+                    <p class="worktext" data-id="4">Written by David Watson<br>Shakespeare in Shoreditch Festival<br>Set Designer: Liz Marsden<br>Sound Designer: Giles Thomas<br>Costume Designer: Kelly Ryan<br>Photographer: Camilla Greenwell<br></p>
+                    <p class="worktext" data-id="1">Written by Anthony Neilson<br>Styx<br>Designer: Grace Smart<br>Lighting Designer: Ciaran Cunningham<br>Sound Designer: Giles Thomas<br>Photographer: Ciaran Cunningham<br><br><a href="https://www.theguardian.com/stage/2017/mar/19/normal-review-styx-london"> ‘Emma Baggott leads an astute, clever revival of Anthony Neilson’s play…She draws fine performances from all three actors'…  Lyn Gardner - The Guardian</a></p>
             	</div>
             </div>
         </div>
