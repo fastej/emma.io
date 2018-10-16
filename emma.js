@@ -1101,8 +1101,110 @@ function WidthChange(mq) {
 			$('#nholder').css('top', '0');
 			$('.landingop').css('font-size', '14px');
 			$('.workop').css('display', 'inline-block');
+			$('.workop').css({'color':"", 'font-weight':200});
 			$('#counter').css('display', 'none');
 			
+			if ($("#work li[data-id=0]").css('opacity') === '1') {
+					document.getElementById('normalop').innerHTML = "normal";
+					document.getElementById('pruop').innerHTML = "the pru project";
+					document.getElementById('scanartistsop').innerHTML = "scan artists";
+					document.getElementById('thehwordop').innerHTML = "the h word";
+					document.getElementById('thishouseop').innerHTML = "this house";
+					document.getElementById('mcqueenop').innerHTML = "mcqueen";
+					document.getElementById('yellowop').innerHTML = "the sound of yellow";
+					document.getElementById('thevillageop').innerHTML = "the village";
+					document.getElementById('roadop').innerHTML = "one for the road <";
+					$('#roadop').css({'color' : 'rgba(127,216,5,1.00)', 'font-weight':300});
+				} else if ($("#work li[data-id=1]").css('opacity') === '1') {
+					document.getElementById('normalop').innerHTML = "normal <";
+					document.getElementById('pruop').innerHTML = "the pru project";
+					document.getElementById('scanartistsop').innerHTML = "scan artists";
+					document.getElementById('thehwordop').innerHTML = "the h word";
+					document.getElementById('thishouseop').innerHTML = "this house";
+					document.getElementById('mcqueenop').innerHTML = "mcqueen";
+					document.getElementById('yellowop').innerHTML = "the sound of yellow";
+					document.getElementById('thevillageop').innerHTML = "the village";
+					document.getElementById('roadop').innerHTML = "one for the road";
+					$('#normalop').css({'color' : 'rgba(127,216,5,1.00)', 'font-weight':300});
+				} else if ($("#work li[data-id=2]").css('opacity') === '1') {
+					document.getElementById('normalop').innerHTML = "normal";
+					document.getElementById('pruop').innerHTML = "the pru project <";
+					document.getElementById('scanartistsop').innerHTML = "scan artists";
+					document.getElementById('thehwordop').innerHTML = "the h word";
+					document.getElementById('thishouseop').innerHTML = "this house";
+					document.getElementById('mcqueenop').innerHTML = "mcqueen";
+					document.getElementById('yellowop').innerHTML = "the sound of yellow";
+					document.getElementById('thevillageop').innerHTML = "the village";
+					document.getElementById('roadop').innerHTML = "one for the road";
+					$('#pruop').css({'color' : 'rgba(127,216,5,1.00)', 'font-weight':300});
+				} else if ($("#work li[data-id=3]").css('opacity') === '1') {
+					document.getElementById('normalop').innerHTML = "normal";
+					document.getElementById('pruop').innerHTML = "the pru project";
+					document.getElementById('scanartistsop').innerHTML = "scan artists <";
+					document.getElementById('thehwordop').innerHTML = "the h word";
+					document.getElementById('thishouseop').innerHTML = "this house";
+					document.getElementById('mcqueenop').innerHTML = "mcqueen";
+					document.getElementById('yellowop').innerHTML = "the sound of yellow";
+					document.getElementById('thevillageop').innerHTML = "the village";
+					document.getElementById('roadop').innerHTML = "one for the road";
+					$('#scanartistsop').css({'color' : 'rgba(127,216,5,1.00)', 'font-weight':300});
+				} else if ($("#work li[data-id=4]").css('opacity') === '1') {
+					document.getElementById('normalop').innerHTML = "normal";
+					document.getElementById('pruop').innerHTML = "the pru project";
+					document.getElementById('scanartistsop').innerHTML = "scan artists";
+					document.getElementById('thehwordop').innerHTML = "the h word <";
+					document.getElementById('thishouseop').innerHTML = "this house";
+					document.getElementById('mcqueenop').innerHTML = "mcqueen";
+					document.getElementById('yellowop').innerHTML = "the sound of yellow";
+					document.getElementById('thevillageop').innerHTML = "the village";
+					document.getElementById('roadop').innerHTML = "one for the road";
+					$('#thehwordop').css({'color' : 'rgba(127,216,5,1.00)', 'font-weight':300});
+				} else if ($("#work li[data-id=5]").css('opacity') === '1') {
+					document.getElementById('normalop').innerHTML = "normal";
+					document.getElementById('pruop').innerHTML = "the pru project";
+					document.getElementById('scanartistsop').innerHTML = "scan artists";
+					document.getElementById('thehwordop').innerHTML = "the h word";
+					document.getElementById('thishouseop').innerHTML = "this house <";
+					document.getElementById('mcqueenop').innerHTML = "mcqueen";
+					document.getElementById('yellowop').innerHTML = "the sound of yellow";
+					document.getElementById('thevillageop').innerHTML = "the village";
+					document.getElementById('roadop').innerHTML = "one for the road";
+					$('#thishouseop').css({'color' : 'rgba(127,216,5,1.00)', 'font-weight':300});
+				} else if ($("#work li[data-id=6]").css('opacity') === '1') {
+					document.getElementById('normalop').innerHTML = "normal";
+					document.getElementById('pruop').innerHTML = "the pru project";
+					document.getElementById('scanartistsop').innerHTML = "scan artists";
+					document.getElementById('thehwordop').innerHTML = "the h word";
+					document.getElementById('thishouseop').innerHTML = "this house";
+					document.getElementById('mcqueenop').innerHTML = "mcqueen <";
+					document.getElementById('yellowop').innerHTML = "the sound of yellow";
+					document.getElementById('thevillageop').innerHTML = "the village";
+					document.getElementById('roadop').innerHTML = "one for the road";
+					$('#mcqueenop').css({'color' : 'rgba(127,216,5,1.00)', 'font-weight':300});
+				} else if ($("#work li[data-id=7]").css('opacity') === '1') {
+					document.getElementById('normalop').innerHTML = "normal";
+					document.getElementById('pruop').innerHTML = "the pru project";
+					document.getElementById('scanartistsop').innerHTML = "scan artists";
+					document.getElementById('thehwordop').innerHTML = "the h word";
+					document.getElementById('thishouseop').innerHTML = "this house";
+					document.getElementById('mcqueenop').innerHTML = "mcqueen";
+					document.getElementById('yellowop').innerHTML = "the sound of yellow <";
+					document.getElementById('thevillageop').innerHTML = "the village";
+					document.getElementById('roadop').innerHTML = "one for the road";
+					$('#yellowop').css({'color' : 'rgba(127,216,5,1.00)', 'font-weight':300});
+				} else if ($("#work li[data-id=8]").css('opacity') === '1') {
+					document.getElementById('normalop').innerHTML = "normal";
+					document.getElementById('pruop').innerHTML = "the pru project";
+					document.getElementById('scanartistsop').innerHTML = "scan artists";
+					document.getElementById('thehwordop').innerHTML = "the h word";
+					document.getElementById('thishouseop').innerHTML = "this house";
+					document.getElementById('mcqueenop').innerHTML = "mcqueen";
+					document.getElementById('yellowop').innerHTML = "the sound of yellow";
+					document.getElementById('thevillageop').innerHTML = "the village <";
+					document.getElementById('roadop').innerHTML = "one for the road";
+					$('#thevillageop').css({'color' : 'rgba(127,216,5,1.00)', 'font-weight':300});
+				} 
+
 			$('.landingop').on('click', function() {
 				if ($(this).is('#justdoneop')) {
 					$('.landingop').css('font-size', '14px');
