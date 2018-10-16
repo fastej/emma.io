@@ -226,7 +226,7 @@ $('.button').on('click', function(){
 		
 	} else if ($(this).is('#landingb')) {
 		
-		$('.landingop').css({'color':"", 'font-weight':200, 'font-size':'14px'});
+		$('.landingop').css({'color':"", 'font-weight':200, 'font-size':""});
 		$('#currentlyop').css({'color' : 'rgba(70,140,231,1.00)', 'font-weight':300});
 		document.getElementById('justdoneop').innerHTML = "just done";
 		document.getElementById('currentlyop').innerHTML = "currently";
@@ -1075,12 +1075,15 @@ function WidthChange(mq) {
 			});
 			
 			if ($('#justdoneop').css('font-weight') === '300') {
+					$('.landingop').css('font-size', '14px');
 					$('#justdoneop').css('font-size', '22px');
 					document.getElementById('justdoneop').innerHTML = "<span>></span> just done <span><</span>";
 			} else if ($('#currentlyop').css('font-weight') === '300') {
+					$('.landingop').css('font-size', '14px');
 					$('#currentlyop').css('font-size', '22px');
 					document.getElementById('currentlyop').innerHTML = "<span>></span> currently <span><</span>";
 			} else if ($('#doingnextop').css('font-weight') === '300') {
+					$('.landingop').css('font-size', '14px');
 					$('#doingnextop').css('font-size', '22px');
 					document.getElementById('doingnextop').innerHTML = "<span>></span> doing next <span><</span>";
 			}
@@ -1099,7 +1102,7 @@ function WidthChange(mq) {
 			$('#nprojholder').css('top', '0');
 			$('#pholder').css('top', '0');
 			$('#nholder').css('top', '0');
-			$('.landingop').css('font-size', '14px');
+			$('.landingop').css('font-size', "");
 			$('.workop').css('display', 'inline-block');
 			$('.workop').css({'color':"", 'font-weight':200});
 			$('#counter').css('display', 'none');
@@ -1207,13 +1210,13 @@ function WidthChange(mq) {
 
 			$('.landingop').on('click', function() {
 				if ($(this).is('#justdoneop')) {
-					$('.landingop').css('font-size', '14px');
+					$('.landingop').css('font-size', "");
 					document.getElementById('justdoneop').innerHTML = "just done <";
 				} else if ($(this).is('#currentlyop')) {
-					$('.landingop').css('font-size', '14px');
+					$('.landingop').css('font-size', "");
 					document.getElementById('currentlyop').innerHTML = "currently <";
 				} else {
-					$('.landingop').css('font-size', '14px');
+					$('.landingop').css('font-size', "");
 					document.getElementById('doingnextop').innerHTML = "doing next <";
 				}
 			});
