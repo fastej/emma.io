@@ -29,6 +29,11 @@ body {
 	z-index:3;
 }
 
+#nav li a {
+	text-decoration:none;
+	color:black;
+}
+
 h1 {
 	margin:0;
 	margin-left:40px;
@@ -202,6 +207,10 @@ h4 {
 	background-size:100%;
 	opacity:1;
 	margin-left:0%;
+}
+
+#landing #then {
+	background-image:url(Copper%20And%20Steel/1.jpg);
 }
 
 #pholder {
@@ -400,6 +409,10 @@ h4 {
 
 #work #project7 {
 	background-image:url(The%20Sound%20Of%20Yellow/1.jpg);
+}
+
+#work #project8 {
+	background-image:url(The%20Village/1.jpg);
 }
 
 #work li {
