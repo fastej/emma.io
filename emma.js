@@ -232,6 +232,7 @@ $('.button').on('click', function(){
 		document.getElementById('justdoneop').innerHTML = "just done";
 		document.getElementById('currentlyop').innerHTML = "currently";
 		document.getElementById('doingnextop').innerHTML = "doing next";
+		document.getElementById('landingtitle').innerHTML = "currently";
 		var newprojtitleheightl = $('#landing li[data-id=1] .ptitle').height();
 		$('.pjob').css('margin-bottom', newprojtitleheightl);
 	
@@ -1425,7 +1426,7 @@ function preloadImages(array) {
     }
 } 
 
-preloadImages(["One%20For%20The%20Road/1.jpg", "One%20For%20The%20Road/2.jpg", "One%20For%20The%20Road/3.jpg", "One%20For%20The%20Road/4.jpg", "One%20For%20The%20Road/5.jpg", "One%20For%20The%20Road/6.jpg", "One%20For%20The%20Road/7.jpg", "The%20Sound%20Of%20Yellow/1.jpg", "The%20Sound%20Of%20Yellow/2.jpg", "The%20Sound%20Of%20Yellow/3.jpg", "The%20Sound%20Of%20Yellow/4.jpg", "The%20Sound%20Of%20Yellow/5.jpg", "The%20Sound%20Of%20Yellow/6.jpg", "The%20Sound%20Of%20Yellow/7.jpg", "The%20Sound%20Of%20Yellow/8.jpg", "Normal/1.jpg", "Normal/2.jpg", "The%20H%20Word/1.jpg", "The%20H%20Word/2.jpg", "The%20H%20Word/3.jpg", "The%20H%20Word/4.jpg", "This%20House/1.jpg", "This%20House/2.jpg", "This%20House/3.jpg", "This%20House/4.jpg", "This%20House/5.jpg", "This%20House/6.jpg", "This%20House/7.jpg", "Mcqueen/1.jpg", "Mcqueen/2.jpg", "Mcqueen/3.jpg", "Mcqueen/4.jpg", "Mcqueen/5.jpg", "The%20PRU%20Project/1.jpg", "The%20PRU%20Project/2.jpg", "The%20PRU%20Project/3.jpg", "The%20H%20Word/3.jpg", "The%20H%20Word/4.jpg", "The%20Village/1.jpg", "The%20Village/2.jpg", "The%20Village/3.jpg", "The%20Village/4.jpg", "The%20Village/5.jpg"]);
+preloadImages(["One%20For%20The%20Road/1.jpg", "One%20For%20The%20Road/2.jpg", "One%20For%20The%20Road/3.jpg", "One%20For%20The%20Road/4.jpg", "One%20For%20The%20Road/5.jpg", "One%20For%20The%20Road/6.jpg", "One%20For%20The%20Road/7.jpg", "The%20Sound%20Of%20Yellow/1.jpg", "The%20Sound%20Of%20Yellow/2.jpg", "The%20Sound%20Of%20Yellow/3.jpg", "The%20Sound%20Of%20Yellow/4.jpg", "The%20Sound%20Of%20Yellow/5.jpg", "The%20Sound%20Of%20Yellow/6.jpg", "The%20Sound%20Of%20Yellow/7.jpg", "The%20Sound%20Of%20Yellow/8.jpg", "Normal/1.jpg", "Normal/2.jpg", "The%20H%20Word/1.jpg", "The%20H%20Word/2.jpg", "The%20H%20Word/3.jpg", "The%20H%20Word/4.jpg", "This%20House/1.jpg", "This%20House/2.jpg", "This%20House/3.jpg", "This%20House/4.jpg", "This%20House/5.jpg", "This%20House/6.jpg", "This%20House/7.jpg", "Mcqueen/1.jpg", "Mcqueen/2.jpg", "Mcqueen/3.jpg", "Mcqueen/4.jpg", "Mcqueen/5.jpg", "The%20PRU%20Project/1.jpg", "The%20PRU%20Project/2.jpg", "The%20PRU%20Project/3.jpg", "The%20H%20Word/3.jpg", "The%20H%20Word/4.jpg", "The%20Village/1.jpg", "The%20Village/2.jpg", "The%20Village/3.jpg", "The%20Village/4.jpg", "The%20Village/5.jpg", "Copper%20And%20Steel/1.jpg", "Copper%20And%20Steel/2.jpg", "Copper%20And%20Steel/3.jpg", "Copper%20And%20Steel/4.jpg", "Copper%20And%20Steel/5.jpg", "Copper%20And%20Steel/6.jpg", "Copper%20And%20Steel/7.jpg", "Copper%20And%20Steel/8.jpg"]);
 
 jQuery.easing['jswing'] = jQuery.easing['swing'];
 
