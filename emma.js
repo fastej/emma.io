@@ -31,7 +31,7 @@ $(document).ready( function() {
 	
 	landingimg.css('top', (fullheight - landingimg.height())/2);
 	$('#justdoneop').css('margin-top', $('#nholder').height()/2 - 1.5*$('#justdoneop').height());
-	$('#roadop').css('margin-top', $('#nprojholder').height()/2 - 4.5*$('#normalop').height());
+	$('#copperop').css('margin-top', $('#nprojholder').height()/2 - 7*$('#normalop').height());
 	aboutimg.css('top', -width3);
 	workimg.css('top', -width4);
 	containerwork.css('height', width4);
@@ -107,7 +107,7 @@ function updateHeight()
 		
 	if ($('#work').css('opacity') === '1') {
 		var i;
-		for (i = 0; i < 9; i++) {
+		for (i = 0; i < 10; i++) {
 			if ($('#work li[data-id='+ i +']').css('opacity') === '1') {
 				$('#work li[data-id='+ i +'] .pjob').css('margin-bottom', $('#work li[data-id='+ i +'] .ptitle').height());
 			}
@@ -185,7 +185,7 @@ $('.button').on('click', function(){
 		
 	} else if ($(this).is('#workb')) {
 		
-		document.getElementById('counterp').innerHTML = "1/9";
+		document.getElementById('counterp').innerHTML = "1/10";
 		var newprojtitleheight = $('#work li[data-id=0] .ptitle').height();
 		$('.pjob').css('margin-bottom', newprojtitleheight);
 	
@@ -194,6 +194,7 @@ $('.button').on('click', function(){
 		$('#landing').css('z-index',-1);
 		$('#work').css('z-index',0);
 		$('#nav').css('z-index', 1);
+		$('#whitefiller').css('z-index', 1);
 	    $('#work').animate({opacity: 1}, 0);
 		worktitle.delay(800).animate({opacity:1},250);
 		$('#work li').css({'margin-left':"", 'opacity':"", 'background-size':""});
@@ -213,7 +214,7 @@ $('.button').on('click', function(){
 		$(window).on('resize', function () {
 			if (($(window).height() - $('#workimg').height()) > 0) {
 				$('#workimg').css('top', (($(window).height() - $('#workimg').height())/2) +30);
-				$('#roadop').css('margin-top', $('#nprojholder').height()/2 - 4.5*$('#normalop').height());
+				$('#copperop').css('margin-top', $('#nprojholder').height()/2 - 7*$('#normalop').height());
 			} else {
 				$('#workimg').css('top', 30);
 				$('#normalop').css('top', "");
@@ -239,6 +240,7 @@ $('.button').on('click', function(){
 		$('#work').css('z-index',-1);
 		$('#landing').css('z-index',0);
 		$('#nav').css('z-index', 1);
+		$('#whitefiller').css('z-index', 1);
 	    $('#landing').animate({opacity: 1}, 0);
 		landingtitle.delay(800).animate({opacity:1},250);
 		$('#landing li').css({'margin-left':"", 'opacity':"", 'background-size':""});
@@ -283,7 +285,7 @@ $('#nav li').on('click', function() {
 		document.getElementById('workb').innerHTML = "previous work <";
 		document.getElementById('aboutb').innerHTML = "about";
 		
-		$('#workb').css({'color' : 'rgba(127,216,5,1.00)', 'font-weight':300});
+		$('#workb').css({'color' : 'rgba(6,151,16,1.00)', 'font-weight':300});
 	} else if ($(this).is('#landingb')) {
 		$('#nav li').css({'color':"", 'font-weight':200});
 		document.getElementById('landingb').innerHTML = "what i'm up to <";
@@ -385,7 +387,7 @@ $('#doingnextop').on('click', function(){
 
 $('.workop').on('click', function() {
 	$('.workop').css({'color':"", 'font-weight':200});
-	$(this).css({'color' : 'rgba(127,216,5,1.00)', 'font-weight':300});
+	$(this).css({'color' : 'rgba(6,151,16,1.00)', 'font-weight':300});
 	
 	if ($(this).is('#normalop')) {
 		document.getElementById('normalop').innerHTML = "normal <";
@@ -397,6 +399,7 @@ $('.workop').on('click', function() {
 		document.getElementById('yellowop').innerHTML = "the sound of yellow";
 		document.getElementById('thevillageop').innerHTML = "the village";
 		document.getElementById('roadop').innerHTML = "one for the road";
+		document.getElementById('copperop').innerHTML = "copper & steel";
 	} else if ($(this).is('#pruop')) {
 		document.getElementById('normalop').innerHTML = "normal";
 		document.getElementById('pruop').innerHTML = "the pru project <";
@@ -407,6 +410,7 @@ $('.workop').on('click', function() {
 		document.getElementById('yellowop').innerHTML = "the sound of yellow";
 		document.getElementById('thevillageop').innerHTML = "the village";
 		document.getElementById('roadop').innerHTML = "one for the road";
+		document.getElementById('copperop').innerHTML = "copper & steel";
 	} else if ($(this).is('#scanartistsop')) {
 		document.getElementById('normalop').innerHTML = "normal";
 		document.getElementById('pruop').innerHTML = "the pru project";
@@ -417,6 +421,7 @@ $('.workop').on('click', function() {
 		document.getElementById('yellowop').innerHTML = "the sound of yellow";
 		document.getElementById('thevillageop').innerHTML = "the village";
 		document.getElementById('roadop').innerHTML = "one for the road";
+		document.getElementById('copperop').innerHTML = "copper & steel";
 	} else if ($(this).is('#thehwordop')) {
 		document.getElementById('normalop').innerHTML = "normal";
 		document.getElementById('pruop').innerHTML = "the pru project";
@@ -427,6 +432,7 @@ $('.workop').on('click', function() {
 		document.getElementById('yellowop').innerHTML = "the sound of yellow";
 		document.getElementById('thevillageop').innerHTML = "the village";
 		document.getElementById('roadop').innerHTML = "one for the road";
+		document.getElementById('copperop').innerHTML = "copper & steel";
 	} else if ($(this).is('#thishouseop')) {
 		document.getElementById('normalop').innerHTML = "normal";
 		document.getElementById('pruop').innerHTML = "the pru project";
@@ -437,6 +443,7 @@ $('.workop').on('click', function() {
 		document.getElementById('yellowop').innerHTML = "the sound of yellow";
 		document.getElementById('thevillageop').innerHTML = "the village";
 		document.getElementById('roadop').innerHTML = "one for the road";
+		document.getElementById('copperop').innerHTML = "copper & steel";
 	} else if ($(this).is('#mcqueenop')) {
 		document.getElementById('normalop').innerHTML = "normal";
 		document.getElementById('pruop').innerHTML = "the pru project";
@@ -447,6 +454,7 @@ $('.workop').on('click', function() {
 		document.getElementById('yellowop').innerHTML = "the sound of yellow";
 		document.getElementById('thevillageop').innerHTML = "the village";
 		document.getElementById('roadop').innerHTML = "one for the road";
+		document.getElementById('copperop').innerHTML = "copper & steel";
 	} else if ($(this).is('#yellowop')) {
 		document.getElementById('normalop').innerHTML = "normal";
 		document.getElementById('pruop').innerHTML = "the pru project";
@@ -457,6 +465,7 @@ $('.workop').on('click', function() {
 		document.getElementById('yellowop').innerHTML = "the sound of yellow <";
 		document.getElementById('thevillageop').innerHTML = "the village";
 		document.getElementById('roadop').innerHTML = "one for the road";
+		document.getElementById('copperop').innerHTML = "copper & steel";
 	} else if ($(this).is('#thevillageop')) {
 		document.getElementById('normalop').innerHTML = "normal";
 		document.getElementById('pruop').innerHTML = "the pru project";
@@ -467,6 +476,7 @@ $('.workop').on('click', function() {
 		document.getElementById('yellowop').innerHTML = "the sound of yellow";
 		document.getElementById('thevillageop').innerHTML = "the village <";
 		document.getElementById('roadop').innerHTML = "one for the road";
+		document.getElementById('copperop').innerHTML = "copper & steel";
 	} else if ($(this).is('#roadop')) {
 		document.getElementById('normalop').innerHTML = "normal";
 		document.getElementById('pruop').innerHTML = "the pru project";
@@ -477,12 +487,24 @@ $('.workop').on('click', function() {
 		document.getElementById('yellowop').innerHTML = "the sound of yellow";
 		document.getElementById('thevillageop').innerHTML = "the village";
 		document.getElementById('roadop').innerHTML = "one for the road <";
-	} 
+		document.getElementById('copperop').innerHTML = "copper & steel";
+	} else if ($(this).is('#copperop')) {
+		document.getElementById('normalop').innerHTML = "normal";
+		document.getElementById('pruop').innerHTML = "the pru project";
+		document.getElementById('scanartistsop').innerHTML = "scan artists";
+		document.getElementById('thehwordop').innerHTML = "the h word";
+		document.getElementById('thishouseop').innerHTML = "this house";
+		document.getElementById('mcqueenop').innerHTML = "mcqueen";
+		document.getElementById('yellowop').innerHTML = "the sound of yellow";
+		document.getElementById('thevillageop').innerHTML = "the village";
+		document.getElementById('roadop').innerHTML = "one for the road";
+		document.getElementById('copperop').innerHTML = "copper & steel <";
+	}
 });
 
-$('#roadop').on('click', function(){
+$('#copperop').on('click', function(){
 	
-	document.getElementById('counterp').innerHTML = "1/9";
+	document.getElementById('counterp').innerHTML = "1/10";
 	
 	var i;
 	for (i=0 ; i<10 ; i++) {
@@ -503,9 +525,9 @@ $('#roadop').on('click', function(){
 	}
 });
 
-$('#normalop').on('click', function(){
+$('#pruop').on('click', function(){
 	
-	document.getElementById('counterp').innerHTML = "2/9";
+	document.getElementById('counterp').innerHTML = "2/10";
 	
 	var i;
 	for (i=0 ; i<10 ; i++) {
@@ -526,9 +548,9 @@ $('#normalop').on('click', function(){
 	}
 });
 
-$('#pruop').on('click', function(){
+$('#normalop').on('click', function(){
 	
-	document.getElementById('counterp').innerHTML = "3/9";
+	document.getElementById('counterp').innerHTML = "3/10";
 	
 	var i;
 	for (i=0 ; i<10 ; i++) {
@@ -549,9 +571,9 @@ $('#pruop').on('click', function(){
 	}
 });
 
-$('#scanartistsop').on('click', function(){
+$('#thehwordop').on('click', function(){
 	
-	document.getElementById('counterp').innerHTML = "4/9";
+	document.getElementById('counterp').innerHTML = "4/10";
 	
 	var i;
 	for (i=0 ; i<10 ; i++) {
@@ -572,9 +594,9 @@ $('#scanartistsop').on('click', function(){
 	}
 });
 
-$('#thehwordop').on('click', function(){
+$('#scanartistsop').on('click', function(){
 	
-	document.getElementById('counterp').innerHTML = "5/9";
+	document.getElementById('counterp').innerHTML = "5/10";
 	
 	var i;
 	for (i=0 ; i<10 ; i++) {
@@ -597,7 +619,7 @@ $('#thehwordop').on('click', function(){
 
 $('#thishouseop').on('click', function(){
 	
-	document.getElementById('counterp').innerHTML = "6/9";
+	document.getElementById('counterp').innerHTML = "6/10";
 	
 	var i;
 	for (i=0 ; i<10 ; i++) {
@@ -620,7 +642,7 @@ $('#thishouseop').on('click', function(){
 
 $('#mcqueenop').on('click', function(){
 	
-	document.getElementById('counterp').innerHTML = "7/9";
+	document.getElementById('counterp').innerHTML = "7/10";
 	
 	var i;
 	for (i=0 ; i<10 ; i++) {
@@ -643,7 +665,7 @@ $('#mcqueenop').on('click', function(){
 
 $('#yellowop').on('click', function(){
 	
-	document.getElementById('counterp').innerHTML = "8/9";
+	document.getElementById('counterp').innerHTML = "8/10";
 	
 	var i;
 	for (i=0 ; i<10 ; i++) {
@@ -666,7 +688,7 @@ $('#yellowop').on('click', function(){
 
 $('#thevillageop').on('click', function(){
 	
-	document.getElementById('counterp').innerHTML = "9/9";
+	document.getElementById('counterp').innerHTML = "9/10";
 	
 	var i;
 	for (i=0 ; i<10 ; i++) {
@@ -687,10 +709,33 @@ $('#thevillageop').on('click', function(){
 	}
 });
 
+$('#roadop').on('click', function(){
+	
+	document.getElementById('counterp').innerHTML = "10/10";
+	
+	var i;
+	for (i=0 ; i<10 ; i++) {
+	if (i === 9) {
+		continue;
+		} else if ($('#work li[data-id='+ i +']').css('opacity') === '1') {
+		$('#work li[data-id=9]').css('margin-left', -60+'%');
+		$('#work li[data-id='+ i +']').animate({backgroundSize:40+'%'},{queue: false, duration:100}, 'easeOutCubic').animate({opacity:0}, {queue: false, duration:200}).animate({marginLeft:60+'%'},{queue: false, duration:400}, 'easeOutCubic');
+		$('#work li[data-id=9]').animate({marginLeft:0+'%'},{queue:false, duration:100}, 'easeOutCubic').animate({opacity:1},{queue:false, duration:200}, 'easeOutCubic').animate({backgroundSize:100+'%'},{queue: false, duration:400}, 'easeOutCubic');
+		var newprojtitleheight = $('#work li[data-id=9] .ptitle').height();
+		$('#work li[data-id='+ i +']').delay(500).animate({marginLeft:-60+'%'}, 0);
+		$('#work .text p[data-id='+ i +']').css('opacity', 0);
+		$('#work .text p[data-id='+ i +']').css('display', 'none');
+		$('#work .text p[data-id=9]').css('display', 'block');
+		$('#work .text p[data-id=9]').animate({opacity:1},{queue:false, duration:350}, 'easeOutCubic');
+		$('.pjob').css('margin-bottom', newprojtitleheight);
+		}
+	}
+});
+
  $('#nextwork').on('click', function(){
  	
  	var i;
- 	for (i = 0; i < 9; i++) {
+ 	for (i = 0; i < 10; i++) {
 		if ($('#work li[data-id='+ i +']').css('opacity') === '1') {
 			$('#work li[data-id='+ i +']').animate({backgroundSize:40+'%'},{queue: false, duration:100}, 'easeOutCubic').animate({opacity:0}, {queue: false, duration:200}).animate({marginLeft:-60+'%'},{queue: false, duration:400}, 'easeOutCubic');
 			var iplus1 = i+1;
@@ -702,21 +747,21 @@ $('#thevillageop').on('click', function(){
 			$('#work .text p[data-id='+ iplus1 +']').css('display', 'block');
 			$('#work .text p[data-id='+ iplus1 +']').animate({opacity:1},{queue:false, duration:350}, 'easeOutCubic');
 			$('.pjob').css('margin-bottom', newprojtitleheight);
-			if ($('#work li[data-id=8]').css('opacity') === '1') {
-				document.getElementById('counterp').innerHTML = "1/9";
+			if ($('#work li[data-id=9]').css('opacity') === '1') {
+				document.getElementById('counterp').innerHTML = "1/10";
 			} else {
 			var iplus2 = iplus1 + 1;
-			document.getElementById('counterp').innerHTML = iplus2+"/9";
+			document.getElementById('counterp').innerHTML = iplus2+"/10";
 			}
-		} else if ($('#work li[data-id=8]').css('opacity') === '1') {
-			$('#work li[data-id=8]').animate({backgroundSize:40+'%'},{queue: false, duration:100}, 'easeOutCubic').animate({opacity:0}, {queue: false, duration:200}).animate({marginLeft:-60+'%'},{queue: false, duration:400}, 'easeOutCubic');
+		} else if ($('#work li[data-id=9]').css('opacity') === '1') {
+			$('#work li[data-id=9]').animate({backgroundSize:40+'%'},{queue: false, duration:100}, 'easeOutCubic').animate({opacity:0}, {queue: false, duration:200}).animate({marginLeft:-60+'%'},{queue: false, duration:400}, 'easeOutCubic');
 			$('#work li[data-id=0]').animate({marginLeft:0+'%'},{queue:false, duration:100}, 'easeOutCubic').animate({opacity:1},{queue:false, duration:200}, 'easeOutCubic').animate({backgroundSize:100+'%'},{queue: false, duration:400}, 'easeOutCubic');
-			$('#work .text p[data-id=8]').css('opacity', 0);
-			$('#work .text p[data-id=8]').css('display', 'none');
+			$('#work .text p[data-id=9]').css('opacity', 0);
+			$('#work .text p[data-id=9]').css('display', 'none');
 			$('#work .text p[data-id=0]').css('display', 'block');
 			$('#work .text p[data-id=0]').animate({opacity:1},{queue:false, duration:350}, 'easeOutCubic');
 			$('.pjob').css('margin-bottom', $('#work li[data-id=0] .ptitle').height());
-			document.getElementById('counterp').innerHTML = "1/9";
+			document.getElementById('counterp').innerHTML = "1/10";
 		}
 	}
 });
@@ -724,7 +769,7 @@ $('#thevillageop').on('click', function(){
  $('#prevwork').on('click', function(){
  	
  	var i;
-	for (i = 0; i < 9; i++) {
+	for (i = 0; i < 10; i++) {
 		if ($('#work li[data-id='+ i +']').css('opacity') === '1') {
 			var iminus1 = i-1;
 			var oldprojtitleheight = $('#work li[data-id='+ iminus1 +'] .ptitle').height();
@@ -738,19 +783,19 @@ $('#thevillageop').on('click', function(){
 			$('#work .text p[data-id='+ iminus1 +']').animate({opacity:1},{queue:false, duration:350}, 'easeOutCubic');
 			$('.pjob').css('margin-bottom', oldprojtitleheight);
 			if ($('#work li[data-id=0]').css('opacity') === '1') {
-				document.getElementById('counterp').innerHTML = "9/9";
+				document.getElementById('counterp').innerHTML = "10/10";
 			} else {
 			var iminus2 = iminus1 + 1;
-			document.getElementById('counterp').innerHTML = iminus2+"/9";
+			document.getElementById('counterp').innerHTML = iminus2+"/10";
 			}
 		} else if ($('#work li[data-id=0]').css('opacity') === '1') {
 			$('#work li[data-id=0]').animate({backgroundSize:40+'%'},{queue: false, duration:100}, 'easeOutCubic').animate({opacity:0}, {queue: false, duration:200}).animate({marginLeft:60+'%'},{queue: false, duration:400}, 'easeOutCubic');
-			$('#work li[data-id=8]').animate({marginLeft:0+'%'},{queue:false, duration:100}, 'easeOutCubic').animate({opacity:1},{queue:false, duration:200}, 'easeOutCubic').animate({backgroundSize:100+'%'},{queue: false, duration:400}, 'easeOutCubic');
+			$('#work li[data-id=9]').animate({marginLeft:0+'%'},{queue:false, duration:100}, 'easeOutCubic').animate({opacity:1},{queue:false, duration:200}, 'easeOutCubic').animate({backgroundSize:100+'%'},{queue: false, duration:400}, 'easeOutCubic');
 			$('#work .text p[data-id=0]').css('opacity', 0);
 			$('#work .text p[data-id=0]').css('display', 'none');
-			$('#work .text p[data-id=8]').css('display', 'block');
-			$('#work .text p[data-id=8]').animate({opacity:1},{queue:false, duration:350}, 'easeOutCubic');
-			$('.pjob').css('margin-bottom', $('#work li[data-id=8] .ptitle').height());
+			$('#work .text p[data-id=9]').css('display', 'block');
+			$('#work .text p[data-id=9]').animate({opacity:1},{queue:false, duration:350}, 'easeOutCubic');
+			$('.pjob').css('margin-bottom', $('#work li[data-id=9] .ptitle').height());
 		}
 	}
 });
@@ -829,13 +874,13 @@ var n = 1;
 
 $('#project0 .pnext').on('click', function(){
 	
-	if (n === 7) {
-		$('#project0').css('background-image', 'url("One%20For%20The%20Road/1.jpg")' );
+	if (n === 8) {
+		$('#project0').css('background-image', 'url("Copper%20And%20Steel/1.jpg")' );
 		n=1;
-	} else if (n !== 7) {
+	} else if (n !== 8) {
 			var nplus1 = n+1;
-			$('#project0').css('background-image', 'url("One%20For%20The%20Road/'+ nplus1 +'.jpg")' );
-			$('#project0').css('background-image', 'One%20For%20The%20Road/'+ nplus1 +'.jpg' );
+			$('#project0').css('background-image', 'url("Copper%20And%20Steel/'+ nplus1 +'.jpg")' );
+			$('#project0').css('background-image', 'Copper%20And%20Steel/'+ nplus1 +'.jpg' );
 			n = nplus1;
 	}
 	
@@ -846,12 +891,12 @@ $('#project0 .pnext').on('click', function(){
 $('#project0 .pprev').on('click', function(){
 	
 	if (n === 1) {
-		$('#project0').css('background-image', 'url("One%20For%20The%20Road/7.jpg")' );
-		n=7;
+		$('#project0').css('background-image', 'url("Copper%20And%20Steel/8.jpg")' );
+		n=8;
 	} else if (n !== 1) {
 			var nminus1 = n-1;
-			$('#project0').css('background-image', 'url("One%20For%20The%20Road/'+ nminus1 +'.jpg")' );
-			$('#project0').css('background-image', 'One%20For%20The%20Road/'+ nminus1 +'.jpg' );
+			$('#project0').css('background-image', 'url("Copper%20And%20Steel/'+ nminus1 +'.jpg")' );
+			$('#project0').css('background-image', 'Copper%20And%20Steel/'+ nminus1 +'.jpg' );
 			n = nminus1;
 	}
 	
@@ -997,15 +1042,15 @@ $('#project8 .pprev').on('click', function(){
 
 var e = 1;
 
-$('#project4 .pnext').on('click', function(){
+$('#project3 .pnext').on('click', function(){
 	
 	if (e === 4) {
-		$('#project4').css('background-image', 'url("The%20H%20Word/1.jpg")' );
+		$('#project3').css('background-image', 'url("The%20H%20Word/1.jpg")' );
 		e=1;
 	} else if (e !== 4) {
 			var eplus1 = e+1;
-			$('#project4').css('background-image', 'url("The%20H%20Word/'+ eplus1 +'.jpg")' );
-			$('#project4').css('background-image', 'The%20H%20Word/'+ eplus1 +'.jpg' );
+			$('#project3').css('background-image', 'url("The%20H%20Word/'+ eplus1 +'.jpg")' );
+			$('#project3').css('background-image', 'The%20H%20Word/'+ eplus1 +'.jpg' );
 			e = eplus1;
 	}
 	
@@ -1013,15 +1058,15 @@ $('#project4 .pnext').on('click', function(){
 	$('.arrow').stop();
 });
 
-$('#project4 .pprev').on('click', function(){
+$('#project3 .pprev').on('click', function(){
 	
 	if (e === 1) {
-		$('#project4').css('background-image', 'url("The%20H%20Word/4.jpg")' );
+		$('#project3').css('background-image', 'url("The%20H%20Word/4.jpg")' );
 		e=4;
 	} else if (e !== 1) {
 			var eminus1 = e-1;
-			$('#project4').css('background-image', 'url("The%20H%20Word/'+ eminus1 +'.jpg")' );
-			$('#project4').css('background-image', 'The%20H%20Word/'+ eminus1 +'.jpg' );
+			$('#project3').css('background-image', 'url("The%20H%20Word/'+ eminus1 +'.jpg")' );
+			$('#project3').css('background-image', 'The%20H%20Word/'+ eminus1 +'.jpg' );
 			e = eminus1;
 	}
 	
@@ -1031,15 +1076,15 @@ $('#project4 .pprev').on('click', function(){
 
 var f = 1;
 
-$('#project1 .pnext').on('click', function(){
+$('#project2 .pnext').on('click', function(){
 	
 	if (f === 2) {
-		$('#project1').css('background-image', 'url("Normal/1.jpg")' );
+		$('#project2').css('background-image', 'url("Normal/1.jpg")' );
 		f=1;
 	} else if (f !== 2) {
 			var fplus1 = f+1;
-			$('#project1').css('background-image', 'url("Normal/'+ fplus1 +'.jpg")' );
-			$('#project1').css('background-image', 'Normal/'+ fplus1 +'.jpg' );
+			$('#project2').css('background-image', 'url("Normal/'+ fplus1 +'.jpg")' );
+			$('#project2').css('background-image', 'Normal/'+ fplus1 +'.jpg' );
 			f = fplus1;
 	}
 	
@@ -1047,15 +1092,15 @@ $('#project1 .pnext').on('click', function(){
 	$('.arrow').stop();
 });
 
-$('#project1 .pprev').on('click', function(){
+$('#project2 .pprev').on('click', function(){
 	
 	if (f === 1) {
-		$('#project1').css('background-image', 'url("Normal/2.jpg")' );
+		$('#project2').css('background-image', 'url("Normal/2.jpg")' );
 		f=2;
 	} else if (f !== 1) {
 			var fminus1 = f-1;
-			$('#project1').css('background-image', 'url("Normal/'+ fminus1 +'.jpg")' );
-			$('#project1').css('background-image', 'Normal/'+ fminus1 +'.jpg' );
+			$('#project2').css('background-image', 'url("Normal/'+ fminus1 +'.jpg")' );
+			$('#project2').css('background-image', 'Normal/'+ fminus1 +'.jpg' );
 			f = fminus1;
 	}
 	
@@ -1065,15 +1110,15 @@ $('#project1 .pprev').on('click', function(){
 
 var g = 1;
 
-$('#project2 .pnext').on('click', function(){
+$('#project1 .pnext').on('click', function(){
 	
 	if (g === 3) {
-		$('#project2').css('background-image', 'url("The%20PRU%20Project/1.jpg")' );
+		$('#project1').css('background-image', 'url("The%20PRU%20Project/1.jpg")' );
 		g=1;
 	} else if (g !== 3) {
 			var gplus1 = g+1;
-			$('#project2').css('background-image', 'url("The%20PRU%20Project/'+ gplus1 +'.jpg")' );
-			$('#project2').css('background-image', 'The%20PRU%20Project/'+ gplus1 +'.jpg' );
+			$('#project1').css('background-image', 'url("The%20PRU%20Project/'+ gplus1 +'.jpg")' );
+			$('#project1').css('background-image', 'The%20PRU%20Project/'+ gplus1 +'.jpg' );
 			g = gplus1;
 	}
 	
@@ -1081,16 +1126,50 @@ $('#project2 .pnext').on('click', function(){
 	$('.arrow').stop();
 });
 
-$('#project2 .pprev').on('click', function(){
+$('#project1 .pprev').on('click', function(){
 	
 	if (g === 1) {
-		$('#project2').css('background-image', 'url("The%20PRU%20Project/3.jpg")' );
+		$('#project1').css('background-image', 'url("The%20PRU%20Project/3.jpg")' );
 		g=3;
 	} else if (g !== 1) {
 			var gminus1 = g-1;
-			$('#project2').css('background-image', 'url("The%20PRU%20Project/'+ gminus1 +'.jpg")' );
-			$('#project2').css('background-image', 'The%20PRU%20Project/'+ gminus1 +'.jpg' );
+			$('#project1').css('background-image', 'url("The%20PRU%20Project/'+ gminus1 +'.jpg")' );
+			$('#project1').css('background-image', 'The%20PRU%20Project/'+ gminus1 +'.jpg' );
 			g = gminus1;
+	}
+	
+	$('.arrow').css('opacity',1);
+	$('.arrow').stop();
+});
+
+var h = 1;
+
+$('#project9 .pnext').on('click', function(){
+	
+	if (h === 7) {
+		$('#project9').css('background-image', 'url("One%20For%20The%20Road/1.jpg")' );
+		h=1;
+	} else if (h !== 7) {
+			var hplus1 = h+1;
+			$('#project9').css('background-image', 'url("One%20For%20The%20Road/'+ hplus1 +'.jpg")' );
+			$('#project9').css('background-image', 'One%20For%20The%20Road/'+ hplus1 +'.jpg' );
+			h = hplus1;
+	}
+	
+	$('.arrow').css('opacity',1);
+	$('.arrow').stop();
+});
+
+$('#project9 .pprev').on('click', function(){
+	
+	if (h === 1) {
+		$('#project9').css('background-image', 'url("One%20For%20The%20Road/7.jpg")' );
+		h=7;
+	} else if (h !== 1) {
+			var hminus1 = h-1;
+			$('#project9').css('background-image', 'url("One%20For%20The%20Road/'+ hminus1 +'.jpg")' );
+			$('#project9').css('background-image', 'One%20For%20The%20Road/'+ hminus1 +'.jpg' );
+			h = hminus1;
 	}
 	
 	$('.arrow').css('opacity',1);
@@ -1178,20 +1257,10 @@ function WidthChange(mq) {
 					document.getElementById('mcqueenop').innerHTML = "mcqueen";
 					document.getElementById('yellowop').innerHTML = "the sound of yellow";
 					document.getElementById('thevillageop').innerHTML = "the village";
-					document.getElementById('roadop').innerHTML = "one for the road <";
-					$('#roadop').css({'color' : 'rgba(127,216,5,1.00)', 'font-weight':300});
-				} else if ($("#work li[data-id=1]").css('opacity') === '1') {
-					document.getElementById('normalop').innerHTML = "normal <";
-					document.getElementById('pruop').innerHTML = "the pru project";
-					document.getElementById('scanartistsop').innerHTML = "scan artists";
-					document.getElementById('thehwordop').innerHTML = "the h word";
-					document.getElementById('thishouseop').innerHTML = "this house";
-					document.getElementById('mcqueenop').innerHTML = "mcqueen";
-					document.getElementById('yellowop').innerHTML = "the sound of yellow";
-					document.getElementById('thevillageop').innerHTML = "the village";
 					document.getElementById('roadop').innerHTML = "one for the road";
-					$('#normalop').css({'color' : 'rgba(127,216,5,1.00)', 'font-weight':300});
-				} else if ($("#work li[data-id=2]").css('opacity') === '1') {
+					document.getElementById('copperop').innerHTML = "copper & steel <";
+					$('#copperop').css({'color' : 'rgba(127,216,5,1.00)', 'font-weight':300});
+				} else if ($("#work li[data-id=1]").css('opacity') === '1') {
 					document.getElementById('normalop').innerHTML = "normal";
 					document.getElementById('pruop').innerHTML = "the pru project <";
 					document.getElementById('scanartistsop').innerHTML = "scan artists";
@@ -1201,19 +1270,21 @@ function WidthChange(mq) {
 					document.getElementById('yellowop').innerHTML = "the sound of yellow";
 					document.getElementById('thevillageop').innerHTML = "the village";
 					document.getElementById('roadop').innerHTML = "one for the road";
+					document.getElementById('copperop').innerHTML = "copper & steel";
 					$('#pruop').css({'color' : 'rgba(127,216,5,1.00)', 'font-weight':300});
-				} else if ($("#work li[data-id=3]").css('opacity') === '1') {
-					document.getElementById('normalop').innerHTML = "normal";
+				} else if ($("#work li[data-id=2]").css('opacity') === '1') {
+					document.getElementById('normalop').innerHTML = "normal <";
 					document.getElementById('pruop').innerHTML = "the pru project";
-					document.getElementById('scanartistsop').innerHTML = "scan artists <";
+					document.getElementById('scanartistsop').innerHTML = "scan artists";
 					document.getElementById('thehwordop').innerHTML = "the h word";
 					document.getElementById('thishouseop').innerHTML = "this house";
 					document.getElementById('mcqueenop').innerHTML = "mcqueen";
 					document.getElementById('yellowop').innerHTML = "the sound of yellow";
 					document.getElementById('thevillageop').innerHTML = "the village";
 					document.getElementById('roadop').innerHTML = "one for the road";
-					$('#scanartistsop').css({'color' : 'rgba(127,216,5,1.00)', 'font-weight':300});
-				} else if ($("#work li[data-id=4]").css('opacity') === '1') {
+					document.getElementById('copperop').innerHTML = "copper & steel";
+					$('#normalop').css({'color' : 'rgba(127,216,5,1.00)', 'font-weight':300});
+				} else if ($("#work li[data-id=3]").css('opacity') === '1') {
 					document.getElementById('normalop').innerHTML = "normal";
 					document.getElementById('pruop').innerHTML = "the pru project";
 					document.getElementById('scanartistsop').innerHTML = "scan artists";
@@ -1223,7 +1294,20 @@ function WidthChange(mq) {
 					document.getElementById('yellowop').innerHTML = "the sound of yellow";
 					document.getElementById('thevillageop').innerHTML = "the village";
 					document.getElementById('roadop').innerHTML = "one for the road";
+					document.getElementById('copperop').innerHTML = "copper & steel";
 					$('#thehwordop').css({'color' : 'rgba(127,216,5,1.00)', 'font-weight':300});
+				} else if ($("#work li[data-id=4]").css('opacity') === '1') {
+					document.getElementById('normalop').innerHTML = "normal";
+					document.getElementById('pruop').innerHTML = "the pru project";
+					document.getElementById('scanartistsop').innerHTML = "scan artists <";
+					document.getElementById('thehwordop').innerHTML = "the h word";
+					document.getElementById('thishouseop').innerHTML = "this house";
+					document.getElementById('mcqueenop').innerHTML = "mcqueen";
+					document.getElementById('yellowop').innerHTML = "the sound of yellow";
+					document.getElementById('thevillageop').innerHTML = "the village";
+					document.getElementById('roadop').innerHTML = "one for the road";
+					document.getElementById('copperop').innerHTML = "copper & steel";
+					$('#scanartistsop').css({'color' : 'rgba(127,216,5,1.00)', 'font-weight':300});
 				} else if ($("#work li[data-id=5]").css('opacity') === '1') {
 					document.getElementById('normalop').innerHTML = "normal";
 					document.getElementById('pruop').innerHTML = "the pru project";
@@ -1234,6 +1318,7 @@ function WidthChange(mq) {
 					document.getElementById('yellowop').innerHTML = "the sound of yellow";
 					document.getElementById('thevillageop').innerHTML = "the village";
 					document.getElementById('roadop').innerHTML = "one for the road";
+					document.getElementById('copperop').innerHTML = "copper & steel";
 					$('#thishouseop').css({'color' : 'rgba(127,216,5,1.00)', 'font-weight':300});
 				} else if ($("#work li[data-id=6]").css('opacity') === '1') {
 					document.getElementById('normalop').innerHTML = "normal";
@@ -1245,6 +1330,7 @@ function WidthChange(mq) {
 					document.getElementById('yellowop').innerHTML = "the sound of yellow";
 					document.getElementById('thevillageop').innerHTML = "the village";
 					document.getElementById('roadop').innerHTML = "one for the road";
+					document.getElementById('copperop').innerHTML = "copper & steel";
 					$('#mcqueenop').css({'color' : 'rgba(127,216,5,1.00)', 'font-weight':300});
 				} else if ($("#work li[data-id=7]").css('opacity') === '1') {
 					document.getElementById('normalop').innerHTML = "normal";
@@ -1256,6 +1342,7 @@ function WidthChange(mq) {
 					document.getElementById('yellowop').innerHTML = "the sound of yellow <";
 					document.getElementById('thevillageop').innerHTML = "the village";
 					document.getElementById('roadop').innerHTML = "one for the road";
+					document.getElementById('copperop').innerHTML = "copper & steel";
 					$('#yellowop').css({'color' : 'rgba(127,216,5,1.00)', 'font-weight':300});
 				} else if ($("#work li[data-id=8]").css('opacity') === '1') {
 					document.getElementById('normalop').innerHTML = "normal";
@@ -1267,8 +1354,21 @@ function WidthChange(mq) {
 					document.getElementById('yellowop').innerHTML = "the sound of yellow";
 					document.getElementById('thevillageop').innerHTML = "the village <";
 					document.getElementById('roadop').innerHTML = "one for the road";
+					document.getElementById('copperop').innerHTML = "copper & steel";
 					$('#thevillageop').css({'color' : 'rgba(127,216,5,1.00)', 'font-weight':300});
-				} 
+				}  else if ($("#work li[data-id=9]").css('opacity') === '1') {
+					document.getElementById('normalop').innerHTML = "normal";
+					document.getElementById('pruop').innerHTML = "the pru project";
+					document.getElementById('scanartistsop').innerHTML = "scan artists";
+					document.getElementById('thehwordop').innerHTML = "the h word";
+					document.getElementById('thishouseop').innerHTML = "this house";
+					document.getElementById('mcqueenop').innerHTML = "mcqueen";
+					document.getElementById('yellowop').innerHTML = "the sound of yellow";
+					document.getElementById('thevillageop').innerHTML = "the village";
+					document.getElementById('roadop').innerHTML = "one for the road <";
+					document.getElementById('copperop').innerHTML = "copper & steel";
+					$('#roadop').css({'color' : 'rgba(127,216,5,1.00)', 'font-weight':300});
+				}
 
 			$('.landingop').on('click', function() {
 				if ($(this).is('#justdoneop')) {

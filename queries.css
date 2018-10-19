@@ -45,6 +45,10 @@
 #nav {
 	overflow:scroll;
 }
+
+#whitefiller {
+	overflow:scroll;
+}
 	
 #worktitle {
 	font-size:30px;
@@ -119,6 +123,14 @@
 }
 	
 #nav {
+	height:9.5em;
+	width:100%;
+	float:none;
+	border-right:none;
+	overflow:visible;
+}
+
+#whitefiller {
 	height:9.5em;
 	width:100%;
 	float:none;
@@ -318,7 +330,11 @@ h4 {
 @media screen and (max-width: 460px) {
 	
 #nav {
-	height:8.5em;
+	height:9em;
+}
+
+#whitefiller {
+	height:9em;
 }
 	
 #nav ul {
