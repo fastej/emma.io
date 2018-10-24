@@ -149,7 +149,7 @@ h4 {
 
 .text p a {
 	text-decoration:none;
-	color:rgba(127,216,5,1.00);
+	color:rgba(6,151,16,1.00);
 }
 
 .text p a:hover{
@@ -213,7 +213,7 @@ h4 {
 }
 
 #landing #now {
-	background-image:url(One%20For%20The%20Road/1.jpg);
+	background-image:url(The%20Interview/1.jpg);
 	background-size:100%;
 	opacity:1;
 	margin-left:0%;
@@ -221,6 +221,10 @@ h4 {
 
 #landing #then {
 	background-image:url(Copper%20And%20Steel/1.jpg);
+}
+
+#landing #future {
+	background-image:url(emma.jpg);
 }
 
 #pholder {
@@ -677,6 +681,7 @@ h4 {
 	height:inherit;
 	z-index:-1;
 	position:absolute;
+	opacity:0;
 }
 
 #abouttext {
@@ -708,7 +713,7 @@ h4 {
 	position:absolute;
 	width: calc(60%);
 	background-color:rgba(201,64,154,1.00);
-	background-image:url(../pappy/about.jpg);
+	background-image:url(emma.jpg);
 	background-size:cover;
 	z-index:-2;
 	max-width:700px;

@@ -98,12 +98,6 @@ function updateHeight()
 	landingprojimg.css('height', width5);
 	$('#work li').css('height', width4);
 	$('#landingprojimg').css('height', width5);
-	
-	if ($('#about').css('opacity') === '1') {
-		$('#aboutimg .text').css('top', 85 + '%');
-	} else { 
-		$('#aboutimg .text').css('top', width3);
-	}
 		
 	if ($('#work').css('opacity') === '1') {
 		var i;
@@ -112,9 +106,6 @@ function updateHeight()
 				$('#work li[data-id='+ i +'] .pjob').css('margin-bottom', $('#work li[data-id='+ i +'] .ptitle').height());
 			}
 		}
-		$('#workimg .text').css('top', 85 + '%');
-	} else { 
-		$('#workimg .text').css('top', width3);
 	}
 	
 	if ($('#landing').css('opacity') === '1') {
@@ -149,7 +140,6 @@ $('.button').on('click', function(){
 	$('#aboutimg').css('top', -width3);
 	$('#workimg').css('top', -width3);
 	$('#landingimg').css('top', -width3);
-	$('.text').css('top', width3);
 	
 	$('.title').animate({top: -50 +'%'}, 0);
 	text.css('display', 'none');
@@ -836,7 +826,7 @@ $('#then .pprev').on('click', function(){
 	$('.arrow').stop();
 });
 
-var l = 1;
+/*var l = 1;
 
 $('#now .pnext').on('click', function(){
 	
@@ -869,7 +859,7 @@ $('#now .pprev').on('click', function(){
 	
 	$('.arrow').css('opacity',1);
 	$('.arrow').stop();
-});
+});*/
 
 var n = 1;
 
@@ -1260,7 +1250,7 @@ function WidthChange(mq) {
 					document.getElementById('thevillageop').innerHTML = "the village";
 					document.getElementById('roadop').innerHTML = "one for the road";
 					document.getElementById('copperop').innerHTML = "copper & steel <";
-					$('#copperop').css({'color' : 'rgba(127,216,5,1.00)', 'font-weight':300});
+					$('#copperop').css({'color' : 'rgba(6,151,16,1.00)', 'font-weight':300});
 				} else if ($("#work li[data-id=1]").css('opacity') === '1') {
 					document.getElementById('normalop').innerHTML = "normal";
 					document.getElementById('pruop').innerHTML = "the pru project <";
@@ -1272,7 +1262,7 @@ function WidthChange(mq) {
 					document.getElementById('thevillageop').innerHTML = "the village";
 					document.getElementById('roadop').innerHTML = "one for the road";
 					document.getElementById('copperop').innerHTML = "copper & steel";
-					$('#pruop').css({'color' : 'rgba(127,216,5,1.00)', 'font-weight':300});
+					$('#pruop').css({'color' : 'rgba(6,151,16,1.00)', 'font-weight':300});
 				} else if ($("#work li[data-id=2]").css('opacity') === '1') {
 					document.getElementById('normalop').innerHTML = "normal <";
 					document.getElementById('pruop').innerHTML = "the pru project";
@@ -1284,7 +1274,7 @@ function WidthChange(mq) {
 					document.getElementById('thevillageop').innerHTML = "the village";
 					document.getElementById('roadop').innerHTML = "one for the road";
 					document.getElementById('copperop').innerHTML = "copper & steel";
-					$('#normalop').css({'color' : 'rgba(127,216,5,1.00)', 'font-weight':300});
+					$('#normalop').css({'color' : 'rgba(6,151,16,1.00)', 'font-weight':300});
 				} else if ($("#work li[data-id=3]").css('opacity') === '1') {
 					document.getElementById('normalop').innerHTML = "normal";
 					document.getElementById('pruop').innerHTML = "the pru project";
@@ -1296,7 +1286,7 @@ function WidthChange(mq) {
 					document.getElementById('thevillageop').innerHTML = "the village";
 					document.getElementById('roadop').innerHTML = "one for the road";
 					document.getElementById('copperop').innerHTML = "copper & steel";
-					$('#thehwordop').css({'color' : 'rgba(127,216,5,1.00)', 'font-weight':300});
+					$('#thehwordop').css({'color' : 'rgba(6,151,16,1.00)', 'font-weight':300});
 				} else if ($("#work li[data-id=4]").css('opacity') === '1') {
 					document.getElementById('normalop').innerHTML = "normal";
 					document.getElementById('pruop').innerHTML = "the pru project";
@@ -1308,7 +1298,7 @@ function WidthChange(mq) {
 					document.getElementById('thevillageop').innerHTML = "the village";
 					document.getElementById('roadop').innerHTML = "one for the road";
 					document.getElementById('copperop').innerHTML = "copper & steel";
-					$('#scanartistsop').css({'color' : 'rgba(127,216,5,1.00)', 'font-weight':300});
+					$('#scanartistsop').css({'color' : 'rgba(6,151,16,1.00)', 'font-weight':300});
 				} else if ($("#work li[data-id=5]").css('opacity') === '1') {
 					document.getElementById('normalop').innerHTML = "normal";
 					document.getElementById('pruop').innerHTML = "the pru project";
@@ -1320,7 +1310,7 @@ function WidthChange(mq) {
 					document.getElementById('thevillageop').innerHTML = "the village";
 					document.getElementById('roadop').innerHTML = "one for the road";
 					document.getElementById('copperop').innerHTML = "copper & steel";
-					$('#thishouseop').css({'color' : 'rgba(127,216,5,1.00)', 'font-weight':300});
+					$('#thishouseop').css({'color' : 'rgba(6,151,16,1.00)', 'font-weight':300});
 				} else if ($("#work li[data-id=6]").css('opacity') === '1') {
 					document.getElementById('normalop').innerHTML = "normal";
 					document.getElementById('pruop').innerHTML = "the pru project";
@@ -1332,7 +1322,7 @@ function WidthChange(mq) {
 					document.getElementById('thevillageop').innerHTML = "the village";
 					document.getElementById('roadop').innerHTML = "one for the road";
 					document.getElementById('copperop').innerHTML = "copper & steel";
-					$('#mcqueenop').css({'color' : 'rgba(127,216,5,1.00)', 'font-weight':300});
+					$('#mcqueenop').css({'color' : 'rgba(6,151,16,1.00)', 'font-weight':300});
 				} else if ($("#work li[data-id=7]").css('opacity') === '1') {
 					document.getElementById('normalop').innerHTML = "normal";
 					document.getElementById('pruop').innerHTML = "the pru project";
@@ -1344,7 +1334,7 @@ function WidthChange(mq) {
 					document.getElementById('thevillageop').innerHTML = "the village";
 					document.getElementById('roadop').innerHTML = "one for the road";
 					document.getElementById('copperop').innerHTML = "copper & steel";
-					$('#yellowop').css({'color' : 'rgba(127,216,5,1.00)', 'font-weight':300});
+					$('#yellowop').css({'color' : 'rgba(6,151,16,1.00)', 'font-weight':300});
 				} else if ($("#work li[data-id=8]").css('opacity') === '1') {
 					document.getElementById('normalop').innerHTML = "normal";
 					document.getElementById('pruop').innerHTML = "the pru project";
@@ -1356,7 +1346,7 @@ function WidthChange(mq) {
 					document.getElementById('thevillageop').innerHTML = "the village <";
 					document.getElementById('roadop').innerHTML = "one for the road";
 					document.getElementById('copperop').innerHTML = "copper & steel";
-					$('#thevillageop').css({'color' : 'rgba(127,216,5,1.00)', 'font-weight':300});
+					$('#thevillageop').css({'color' : 'rgba(6,151,16,1.00)', 'font-weight':300});
 				}  else if ($("#work li[data-id=9]").css('opacity') === '1') {
 					document.getElementById('normalop').innerHTML = "normal";
 					document.getElementById('pruop').innerHTML = "the pru project";
@@ -1368,7 +1358,7 @@ function WidthChange(mq) {
 					document.getElementById('thevillageop').innerHTML = "the village";
 					document.getElementById('roadop').innerHTML = "one for the road <";
 					document.getElementById('copperop').innerHTML = "copper & steel";
-					$('#roadop').css({'color' : 'rgba(127,216,5,1.00)', 'font-weight':300});
+					$('#roadop').css({'color' : 'rgba(6,151,16,1.00)', 'font-weight':300});
 				}
 
 			$('.landingop').on('click', function() {
@@ -1426,7 +1416,7 @@ function preloadImages(array) {
     }
 } 
 
-preloadImages(["One%20For%20The%20Road/1.jpg", "One%20For%20The%20Road/2.jpg", "One%20For%20The%20Road/3.jpg", "One%20For%20The%20Road/4.jpg", "One%20For%20The%20Road/5.jpg", "One%20For%20The%20Road/6.jpg", "One%20For%20The%20Road/7.jpg", "The%20Sound%20Of%20Yellow/1.jpg", "The%20Sound%20Of%20Yellow/2.jpg", "The%20Sound%20Of%20Yellow/3.jpg", "The%20Sound%20Of%20Yellow/4.jpg", "The%20Sound%20Of%20Yellow/5.jpg", "The%20Sound%20Of%20Yellow/6.jpg", "The%20Sound%20Of%20Yellow/7.jpg", "The%20Sound%20Of%20Yellow/8.jpg", "Normal/1.jpg", "Normal/2.jpg", "The%20H%20Word/1.jpg", "The%20H%20Word/2.jpg", "The%20H%20Word/3.jpg", "The%20H%20Word/4.jpg", "This%20House/1.jpg", "This%20House/2.jpg", "This%20House/3.jpg", "This%20House/4.jpg", "This%20House/5.jpg", "This%20House/6.jpg", "This%20House/7.jpg", "Mcqueen/1.jpg", "Mcqueen/2.jpg", "Mcqueen/3.jpg", "Mcqueen/4.jpg", "Mcqueen/5.jpg", "The%20PRU%20Project/1.jpg", "The%20PRU%20Project/2.jpg", "The%20PRU%20Project/3.jpg", "The%20H%20Word/3.jpg", "The%20H%20Word/4.jpg", "The%20Village/1.jpg", "The%20Village/2.jpg", "The%20Village/3.jpg", "The%20Village/4.jpg", "The%20Village/5.jpg", "Copper%20And%20Steel/1.jpg", "Copper%20And%20Steel/2.jpg", "Copper%20And%20Steel/3.jpg", "Copper%20And%20Steel/4.jpg", "Copper%20And%20Steel/5.jpg", "Copper%20And%20Steel/6.jpg", "Copper%20And%20Steel/7.jpg", "Copper%20And%20Steel/8.jpg"]);
+preloadImages(["One%20For%20The%20Road/1.jpg", "One%20For%20The%20Road/2.jpg", "One%20For%20The%20Road/3.jpg", "One%20For%20The%20Road/4.jpg", "One%20For%20The%20Road/5.jpg", "One%20For%20The%20Road/6.jpg", "One%20For%20The%20Road/7.jpg", "The%20Sound%20Of%20Yellow/1.jpg", "The%20Sound%20Of%20Yellow/2.jpg", "The%20Sound%20Of%20Yellow/3.jpg", "The%20Sound%20Of%20Yellow/4.jpg", "The%20Sound%20Of%20Yellow/5.jpg", "The%20Sound%20Of%20Yellow/6.jpg", "The%20Sound%20Of%20Yellow/7.jpg", "The%20Sound%20Of%20Yellow/8.jpg", "Normal/1.jpg", "Normal/2.jpg", "The%20H%20Word/1.jpg", "The%20H%20Word/2.jpg", "The%20H%20Word/3.jpg", "The%20H%20Word/4.jpg", "This%20House/1.jpg", "This%20House/2.jpg", "This%20House/3.jpg", "This%20House/4.jpg", "This%20House/5.jpg", "This%20House/6.jpg", "This%20House/7.jpg", "Mcqueen/1.jpg", "Mcqueen/2.jpg", "Mcqueen/3.jpg", "Mcqueen/4.jpg", "Mcqueen/5.jpg", "The%20PRU%20Project/1.jpg", "The%20PRU%20Project/2.jpg", "The%20PRU%20Project/3.jpg", "The%20H%20Word/3.jpg", "The%20H%20Word/4.jpg", "The%20Village/1.jpg", "The%20Village/2.jpg", "The%20Village/3.jpg", "The%20Village/4.jpg", "The%20Village/5.jpg", "Copper%20And%20Steel/1.jpg", "Copper%20And%20Steel/2.jpg", "Copper%20And%20Steel/3.jpg", "Copper%20And%20Steel/4.jpg", "Copper%20And%20Steel/5.jpg", "Copper%20And%20Steel/6.jpg", "Copper%20And%20Steel/7.jpg", "Copper%20And%20Steel/8.jpg", "emma.jpg", "The%20Interview/1.jpg"]);
 
 jQuery.easing['jswing'] = jQuery.easing['swing'];
 
