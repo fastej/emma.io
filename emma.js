@@ -82,7 +82,7 @@ function updateHeight()
 				landingimg.css('top', (($(window).height() - $('#landingimg').height())/2) +50);
 				$('#justdoneop').css('margin-top', $('#nholder').height()/2 - 1.5*$('#justdoneop').height());
 			} else {
-				landingimg.css('top', 30);
+				landingimg.css('top', 50);
 				$('#justdoneop').css('top', "");
 			}
 
@@ -161,13 +161,13 @@ $('.button').on('click', function(){
 	
 		$('#aboutimg .text').delay(600).animate({top: 85 + '%'}, 600, 'easeOutBounce');
 		$('#aboutimg .title').delay(300).animate({top:-25 + '%'}, 600, 'easeOutBounce');
-		$('#aboutimg').animate({top:($(window).height() - $('#aboutimg').height())/2 + 30}, 600, 'easeOutBack');
+		$('#aboutimg').animate({top:($(window).height() - $('#aboutimg').height())/2 + 50}, 600, 'easeOutBack');
 	
 		$(window).on('resize', function () {
 			if (($(window).height() - $('#aboutimg').height()) > 0) {
-				$('#aboutimg').css('top', (($(window).height() - $('#aboutimg').height())/2) +30);
+				$('#aboutimg').css('top', (($(window).height() - $('#aboutimg').height())/2) +50);
 			} else {
-				$('#aboutimg').css('top', 30);
+				$('#aboutimg').css('top', 50);
 			}
 			}).resize();
 			
@@ -199,14 +199,14 @@ $('.button').on('click', function(){
 	
 		$('#workimg .text').delay(600).animate({top: 85 + '%'}, 600, 'easeOutBounce');
 		$('#workimg .title').delay(300).animate({top:-25 + '%'}, 600, 'easeOutBounce');
-		$('#workimg').animate({top:($(window).height() - $('#workimg').height())/2 + 30}, 600, 'easeOutBack');
+		$('#workimg').animate({top:($(window).height() - $('#workimg').height())/2 + 50}, 600, 'easeOutBack');
 	
 		$(window).on('resize', function () {
 			if (($(window).height() - $('#workimg').height()) > 0) {
-				$('#workimg').css('top', (($(window).height() - $('#workimg').height())/2) +30);
+				$('#workimg').css('top', (($(window).height() - $('#workimg').height())/2) +50);
 				$('#copperop').css('margin-top', $('#nprojholder').height()/2 - 7*$('#normalop').height());
 			} else {
-				$('#workimg').css('top', 30);
+				$('#workimg').css('top', 50);
 				$('#normalop').css('top', "");
 			}
 			}).resize();
@@ -248,9 +248,9 @@ $('.button').on('click', function(){
 	
 		$(window).on('resize', function () {
 			if (($(window).height() - $('#workimg').height()) > 0) {
-				$('#workimg').css('top', (($(window).height() - $('#workimg').height())/2) +30);
+				$('#workimg').css('top', (($(window).height() - $('#workimg').height())/2) +50);
 			} else {
-				$('#workimg').css('top', 30);
+				$('#workimg').css('top', 50);
 			}
 			}).resize();
 		
@@ -1167,6 +1167,40 @@ $('#project9 .pprev').on('click', function(){
 	$('.arrow').stop();
 });
 
+var i = 1;
+
+$('#project4 .pnext').on('click', function(){
+	
+	if (i === 8) {
+		$('#project4').css('background-image', 'url("Scan%20Artists/1.jpg")' );
+		i=1;
+	} else if (i !== 8) {
+			var iplus1 = i+1;
+			$('#project4').css('background-image', 'url("Scan%20Artists/'+ iplus1 +'.jpg")' );
+			$('#project4').css('background-image', 'Scan%20Artists/'+ iplus1 +'.jpg' );
+			i = iplus1;
+	}
+	
+	$('.arrow').css('opacity',1);
+	$('.arrow').stop();
+});
+
+$('#project4 .pprev').on('click', function(){
+	
+	if (i === 1) {
+		$('#project4').css('background-image', 'url("Scan%20Artists/8.jpg")' );
+		i=8;
+	} else if (i !== 1) {
+			var iminus1 = i-1;
+			$('#project4').css('background-image', 'url("Scan%20Artists/'+ iminus1 +'.jpg")' );
+			$('#project4').css('background-image', 'Scan%20Artists/'+ iminus1 +'.jpg' );
+			i = iminus1;
+	}
+	
+	$('.arrow').css('opacity',1);
+	$('.arrow').stop();
+});
+
 if (matchMedia) {
   var mq = window.matchMedia("(max-width: 460px)"); 
   mq.addListener(WidthChange);
@@ -1181,9 +1215,9 @@ function WidthChange(mq) {
 			$('.workop').css('display', 'none');
 			
 			var holdertop = $('#workimg').offset().top;
-				$('#pprojholder').css('top', (($(window).height() - $('#workimg').height())/2) +30);
-				$('#nprojholder').css('top', (($(window).height() - $('#workimg').height())/2) +30);
-				$('#counter').css('top', (($(window).height() - $('#workimg').height())/2) +30);
+				$('#pprojholder').css('top', (($(window).height() - $('#workimg').height())/2) +50);
+				$('#nprojholder').css('top', (($(window).height() - $('#workimg').height())/2) +50);
+				$('#counter').css('top', (($(window).height() - $('#workimg').height())/2) +50);
 				$('#counter').css('display', 'block');
 				
 			var holdertopl = $('#landingimg').offset().top;
@@ -1222,8 +1256,8 @@ function WidthChange(mq) {
 			
 			$('.button').on('click', function () {
 				if ($(this).is('#workb')) {
-					$('#pprojholder').css('top', (($(window).height() - $('#workimg').height())/2) +30);
-					$('#nprojholder').css('top', (($(window).height() - $('#workimg').height())/2) +30);
+					$('#pprojholder').css('top', (($(window).height() - $('#workimg').height())/2) +50);
+					$('#nprojholder').css('top', (($(window).height() - $('#workimg').height())/2) +50);
 				} else if ($(this).is('#landingb')) {
 					$('#nholder').css('top', (($(window).height() - $('#landingimg').height())/2) +50);
 				}
@@ -1395,28 +1429,6 @@ function WidthChange(mq) {
 		
 	}).resize();
 }
-
-function preloadImages(array) {
-    if (!preloadImages.list) {
-        preloadImages.list = [];
-    }
-    var list = preloadImages.list;
-    for (var i = 0; i < array.length; i++) {
-        var img = new Image();
-        img.onload = function() {
-            var index = list.indexOf(this);
-            if (index !== -1) {
-                // remove image from the array once it's loaded
-                // for memory consumption reasons
-                list.splice(index, 1);
-            }
-		}
-        list.push(img);
-        img.src = array[i];
-    }
-} 
-
-preloadImages(["One%20For%20The%20Road/1.jpg", "One%20For%20The%20Road/2.jpg", "One%20For%20The%20Road/3.jpg", "One%20For%20The%20Road/4.jpg", "One%20For%20The%20Road/5.jpg", "One%20For%20The%20Road/6.jpg", "One%20For%20The%20Road/7.jpg", "The%20Sound%20Of%20Yellow/1.jpg", "The%20Sound%20Of%20Yellow/2.jpg", "The%20Sound%20Of%20Yellow/3.jpg", "The%20Sound%20Of%20Yellow/4.jpg", "The%20Sound%20Of%20Yellow/5.jpg", "The%20Sound%20Of%20Yellow/6.jpg", "The%20Sound%20Of%20Yellow/7.jpg", "The%20Sound%20Of%20Yellow/8.jpg", "Normal/1.jpg", "Normal/2.jpg", "The%20H%20Word/1.jpg", "The%20H%20Word/2.jpg", "The%20H%20Word/3.jpg", "The%20H%20Word/4.jpg", "This%20House/1.jpg", "This%20House/2.jpg", "This%20House/3.jpg", "This%20House/4.jpg", "This%20House/5.jpg", "This%20House/6.jpg", "This%20House/7.jpg", "Mcqueen/1.jpg", "Mcqueen/2.jpg", "Mcqueen/3.jpg", "Mcqueen/4.jpg", "Mcqueen/5.jpg", "The%20PRU%20Project/1.jpg", "The%20PRU%20Project/2.jpg", "The%20PRU%20Project/3.jpg", "The%20H%20Word/3.jpg", "The%20H%20Word/4.jpg", "The%20Village/1.jpg", "The%20Village/2.jpg", "The%20Village/3.jpg", "The%20Village/4.jpg", "The%20Village/5.jpg", "Copper%20And%20Steel/1.jpg", "Copper%20And%20Steel/2.jpg", "Copper%20And%20Steel/3.jpg", "Copper%20And%20Steel/4.jpg", "Copper%20And%20Steel/5.jpg", "Copper%20And%20Steel/6.jpg", "Copper%20And%20Steel/7.jpg", "Copper%20And%20Steel/8.jpg", "emma.jpg", "The%20Interview/1.jpg"]);
 
 jQuery.easing['jswing'] = jQuery.easing['swing'];
 

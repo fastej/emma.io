@@ -452,7 +452,7 @@ span {
 
 #abouttitle {
 	margin-left:0;
-	margin-top:0.75em;
+	margin-top:0.5em;
 	font-size:34px;
 	
 	-moz-transform: none;  
@@ -506,14 +506,6 @@ span {
 	margin-top:1em;
 }
 
-#abouttitle {
-	margin-top:0.5em;
-}
-
-#worktitle {
-	margin-top:0.25em;
-}
-
 #nprojholder, #pprojholder {
 	margin-top:0em;
 }
@@ -531,7 +523,7 @@ span {
 }
 
 #nprojholder, #pprojholder {
-	margin-top:5em;
+	margin-top:8em;
 }
 
 #counter {
@@ -549,9 +541,14 @@ span {
 }
 
 @media screen and (max-width: 320px) {
+
 	
 #worktitle {
 	margin-top:-0.5em;
+}
+
+#abouttitle {
+	margin-top:0em;
 }
 
 .ptitle p {
