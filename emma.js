@@ -796,12 +796,12 @@ var k = 1;
 $('#then .pnext').on('click', function(){
 	
 	if (k === 8) {
-		$('#then').css('background-image', 'url("Copper%20And%20Steel/1.jpg")' );
+		$('#then').css('background-image', 'url("The%20Interview/1.jpg")' );
 		k=1;
 	} else if (k !== 8) {
 			var kplus1 = k+1;
-			$('#then').css('background-image', 'url("Copper%20And%20Steel/'+ kplus1 +'.jpg")' );
-			$('#then').css('background-image', 'Copper%20And%20Steel/'+ kplus1 +'.jpg' );
+			$('#then').css('background-image', 'url("The%20Interview/'+ kplus1 +'.jpg")' );
+			$('#then').css('background-image', 'The%20Interview/'+ kplus1 +'.jpg' );
 			k = kplus1;
 	}
 	
@@ -813,12 +813,12 @@ $('#then .pnext').on('click', function(){
 $('#then .pprev').on('click', function(){
 	
 	if (k === 1) {
-		$('#then').css('background-image', 'url("Copper%20And%20Steel/8.jpg")' );
+		$('#then').css('background-image', 'url("The%20Interview/8.jpg")' );
 		k=8;
 	} else if (k !== 1) {
 			var kminus1 = k-1;
-			$('#then').css('background-image', 'url("Copper%20And%20Steel/'+ kminus1 +'.jpg")' );
-			$('#then').css('background-image', 'Copper%20And%20Steel/'+ kminus1 +'.jpg' );
+			$('#then').css('background-image', 'url("The%20Interview/'+ kminus1 +'.jpg")' );
+			$('#then').css('background-image', 'The%20Interview/'+ kminus1 +'.jpg' );
 			k = kminus1;
 	}
 	
