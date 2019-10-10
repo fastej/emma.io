@@ -31,7 +31,7 @@ $(document).ready( function() {
 	
 	landingimg.css('top', (fullheight - landingimg.height())/2);
 	$('#justdoneop').css('margin-top', $('#nholder').height()/2 - 1.5*$('#justdoneop').height());
-	$('#copperop').css('margin-top', $('#nprojholder').height()/2 - 7*$('#normalop').height());
+	$('#fierceop').css('margin-top', $('#nprojholder').height()/2 - 7*$('#normalop').height());
 	aboutimg.css('top', -width3);
 	workimg.css('top', -width4);
 	containerwork.css('height', width4);
@@ -204,7 +204,7 @@ $('.button').on('click', function(){
 		$(window).on('resize', function () {
 			if (($(window).height() - $('#workimg').height()) > 0) {
 				$('#workimg').css('top', (($(window).height() - $('#workimg').height())/2) +50);
-				$('#copperop').css('margin-top', $('#nprojholder').height()/2 - 7*$('#normalop').height());
+				$('#fierceop').css('margin-top', $('#nprojholder').height()/2 - 7*$('#normalop').height());
 			} else {
 				$('#workimg').css('top', 50);
 				$('#normalop').css('top', "");
@@ -391,6 +391,7 @@ $('.workop').on('click', function() {
 		document.getElementById('thevillageop').innerHTML = "the village";
 		document.getElementById('roadop').innerHTML = "one for the road";
 		document.getElementById('copperop').innerHTML = "copper & steel";
+		document.getElementById('fierceop').innerHTML = "though she be but little she is fierce";
 	} else if ($(this).is('#pruop')) {
 		document.getElementById('normalop').innerHTML = "normal";
 		document.getElementById('pruop').innerHTML = "the pru project <";
@@ -402,6 +403,7 @@ $('.workop').on('click', function() {
 		document.getElementById('thevillageop').innerHTML = "the village";
 		document.getElementById('roadop').innerHTML = "one for the road";
 		document.getElementById('copperop').innerHTML = "copper & steel";
+		document.getElementById('fierceop').innerHTML = "though she be but little she is fierce";
 	} else if ($(this).is('#scanartistsop')) {
 		document.getElementById('normalop').innerHTML = "normal";
 		document.getElementById('pruop').innerHTML = "the pru project";
@@ -413,6 +415,7 @@ $('.workop').on('click', function() {
 		document.getElementById('thevillageop').innerHTML = "the village";
 		document.getElementById('roadop').innerHTML = "one for the road";
 		document.getElementById('copperop').innerHTML = "copper & steel";
+		document.getElementById('fierceop').innerHTML = "though she be but little she is fierce";
 	} else if ($(this).is('#thehwordop')) {
 		document.getElementById('normalop').innerHTML = "normal";
 		document.getElementById('pruop').innerHTML = "the pru project";
@@ -424,6 +427,7 @@ $('.workop').on('click', function() {
 		document.getElementById('thevillageop').innerHTML = "the village";
 		document.getElementById('roadop').innerHTML = "one for the road";
 		document.getElementById('copperop').innerHTML = "copper & steel";
+		document.getElementById('fierceop').innerHTML = "though she be but little she is fierce";
 	} else if ($(this).is('#thishouseop')) {
 		document.getElementById('normalop').innerHTML = "normal";
 		document.getElementById('pruop').innerHTML = "the pru project";
@@ -435,6 +439,7 @@ $('.workop').on('click', function() {
 		document.getElementById('thevillageop').innerHTML = "the village";
 		document.getElementById('roadop').innerHTML = "one for the road";
 		document.getElementById('copperop').innerHTML = "copper & steel";
+		document.getElementById('fierceop').innerHTML = "though she be but little she is fierce";
 	} else if ($(this).is('#mcqueenop')) {
 		document.getElementById('normalop').innerHTML = "normal";
 		document.getElementById('pruop').innerHTML = "the pru project";
@@ -446,6 +451,7 @@ $('.workop').on('click', function() {
 		document.getElementById('thevillageop').innerHTML = "the village";
 		document.getElementById('roadop').innerHTML = "one for the road";
 		document.getElementById('copperop').innerHTML = "copper & steel";
+		document.getElementById('fierceop').innerHTML = "though she be but little she is fierce";
 	} else if ($(this).is('#yellowop')) {
 		document.getElementById('normalop').innerHTML = "normal";
 		document.getElementById('pruop').innerHTML = "the pru project";
@@ -457,6 +463,7 @@ $('.workop').on('click', function() {
 		document.getElementById('thevillageop').innerHTML = "the village";
 		document.getElementById('roadop').innerHTML = "one for the road";
 		document.getElementById('copperop').innerHTML = "copper & steel";
+		document.getElementById('fierceop').innerHTML = "though she be but little she is fierce";
 	} else if ($(this).is('#thevillageop')) {
 		document.getElementById('normalop').innerHTML = "normal";
 		document.getElementById('pruop').innerHTML = "the pru project";
@@ -468,6 +475,7 @@ $('.workop').on('click', function() {
 		document.getElementById('thevillageop').innerHTML = "the village <";
 		document.getElementById('roadop').innerHTML = "one for the road";
 		document.getElementById('copperop').innerHTML = "copper & steel";
+		document.getElementById('fierceop').innerHTML = "though she be but little she is fierce";
 	} else if ($(this).is('#roadop')) {
 		document.getElementById('normalop').innerHTML = "normal";
 		document.getElementById('pruop').innerHTML = "the pru project";
@@ -479,6 +487,7 @@ $('.workop').on('click', function() {
 		document.getElementById('thevillageop').innerHTML = "the village";
 		document.getElementById('roadop').innerHTML = "one for the road <";
 		document.getElementById('copperop').innerHTML = "copper & steel";
+		document.getElementById('fierceop').innerHTML = "though she be but little she is fierce";
 	} else if ($(this).is('#copperop')) {
 		document.getElementById('normalop').innerHTML = "normal";
 		document.getElementById('pruop').innerHTML = "the pru project";
@@ -490,15 +499,28 @@ $('.workop').on('click', function() {
 		document.getElementById('thevillageop').innerHTML = "the village";
 		document.getElementById('roadop').innerHTML = "one for the road";
 		document.getElementById('copperop').innerHTML = "copper & steel <";
+		document.getElementById('fierceop').innerHTML = "though she be but little she is fierce";
+	} else if ($(this).is('#fierceop')) {
+		document.getElementById('normalop').innerHTML = "normal";
+		document.getElementById('pruop').innerHTML = "the pru project";
+		document.getElementById('scanartistsop').innerHTML = "scan artists";
+		document.getElementById('thehwordop').innerHTML = "the h word";
+		document.getElementById('thishouseop').innerHTML = "this house";
+		document.getElementById('mcqueenop').innerHTML = "mcqueen";
+		document.getElementById('yellowop').innerHTML = "the sound of yellow";
+		document.getElementById('thevillageop').innerHTML = "the village";
+		document.getElementById('roadop').innerHTML = "one for the road";
+		document.getElementById('copperop').innerHTML = "copper & steel";
+		document.getElementById('fierceop').innerHTML = "though she be but little she is fierce <";
 	}
 });
 
-$('#copperop').on('click', function(){
+$('#fierceop').on('click', function(){
 	
-	document.getElementById('counterp').innerHTML = "1/10";
+	document.getElementById('counterp').innerHTML = "1/11";
 	
 	var i;
-	for (i=0 ; i<10 ; i++) {
+	for (i=0 ; i<11 ; i++) {
 	if (i === 0) {
 		continue;
 		} else if ($('#work li[data-id='+ i +']').css('opacity') === '1') {
@@ -516,12 +538,12 @@ $('#copperop').on('click', function(){
 	}
 });
 
-$('#pruop').on('click', function(){
+$('#copperop').on('click', function(){
 	
-	document.getElementById('counterp').innerHTML = "2/10";
+	document.getElementById('counterp').innerHTML = "2/11";
 	
 	var i;
-	for (i=0 ; i<10 ; i++) {
+	for (i=0 ; i<11 ; i++) {
 	if (i === 1) {
 		continue;
 		} else if ($('#work li[data-id='+ i +']').css('opacity') === '1') {
@@ -539,12 +561,12 @@ $('#pruop').on('click', function(){
 	}
 });
 
-$('#normalop').on('click', function(){
+$('#pruop').on('click', function(){
 	
-	document.getElementById('counterp').innerHTML = "3/10";
+	document.getElementById('counterp').innerHTML = "3/11";
 	
 	var i;
-	for (i=0 ; i<10 ; i++) {
+	for (i=0 ; i<11 ; i++) {
 	if (i === 2) {
 		continue;
 		} else if ($('#work li[data-id='+ i +']').css('opacity') === '1') {
@@ -562,12 +584,12 @@ $('#normalop').on('click', function(){
 	}
 });
 
-$('#thehwordop').on('click', function(){
+$('#normalop').on('click', function(){
 	
-	document.getElementById('counterp').innerHTML = "4/10";
+	document.getElementById('counterp').innerHTML = "4/11";
 	
 	var i;
-	for (i=0 ; i<10 ; i++) {
+	for (i=0 ; i<11 ; i++) {
 	if (i === 3) {
 		continue;
 		} else if ($('#work li[data-id='+ i +']').css('opacity') === '1') {
@@ -585,12 +607,12 @@ $('#thehwordop').on('click', function(){
 	}
 });
 
-$('#scanartistsop').on('click', function(){
+$('#thehwordop').on('click', function(){
 	
-	document.getElementById('counterp').innerHTML = "5/10";
+	document.getElementById('counterp').innerHTML = "5/11";
 	
 	var i;
-	for (i=0 ; i<10 ; i++) {
+	for (i=0 ; i<11 ; i++) {
 	if (i === 4) {
 		continue;
 		} else if ($('#work li[data-id='+ i +']').css('opacity') === '1') {
@@ -608,12 +630,12 @@ $('#scanartistsop').on('click', function(){
 	}
 });
 
-$('#thishouseop').on('click', function(){
+$('#scanartistsop').on('click', function(){
 	
-	document.getElementById('counterp').innerHTML = "6/10";
+	document.getElementById('counterp').innerHTML = "6/11";
 	
 	var i;
-	for (i=0 ; i<10 ; i++) {
+	for (i=0 ; i<11 ; i++) {
 	if (i === 5) {
 		continue;
 		} else if ($('#work li[data-id='+ i +']').css('opacity') === '1') {
@@ -631,12 +653,12 @@ $('#thishouseop').on('click', function(){
 	}
 });
 
-$('#mcqueenop').on('click', function(){
+$('#thishouseop').on('click', function(){
 	
-	document.getElementById('counterp').innerHTML = "7/10";
+	document.getElementById('counterp').innerHTML = "7/11";
 	
 	var i;
-	for (i=0 ; i<10 ; i++) {
+	for (i=0 ; i<11 ; i++) {
 	if (i === 6) {
 		continue;
 		} else if ($('#work li[data-id='+ i +']').css('opacity') === '1') {
@@ -654,12 +676,12 @@ $('#mcqueenop').on('click', function(){
 	}
 });
 
-$('#yellowop').on('click', function(){
+$('#mcqueenop').on('click', function(){
 	
-	document.getElementById('counterp').innerHTML = "8/10";
+	document.getElementById('counterp').innerHTML = "8/11";
 	
 	var i;
-	for (i=0 ; i<10 ; i++) {
+	for (i=0 ; i<11 ; i++) {
 	if (i === 7) {
 		continue;
 		} else if ($('#work li[data-id='+ i +']').css('opacity') === '1') {
@@ -677,12 +699,12 @@ $('#yellowop').on('click', function(){
 	}
 });
 
-$('#thevillageop').on('click', function(){
+$('#yellowop').on('click', function(){
 	
-	document.getElementById('counterp').innerHTML = "9/10";
+	document.getElementById('counterp').innerHTML = "9/11";
 	
 	var i;
-	for (i=0 ; i<10 ; i++) {
+	for (i=0 ; i<11 ; i++) {
 	if (i === 8) {
 		continue;
 		} else if ($('#work li[data-id='+ i +']').css('opacity') === '1') {
@@ -700,12 +722,12 @@ $('#thevillageop').on('click', function(){
 	}
 });
 
-$('#roadop').on('click', function(){
+$('#thevillageop').on('click', function(){
 	
-	document.getElementById('counterp').innerHTML = "10/10";
+	document.getElementById('counterp').innerHTML = "10/11";
 	
 	var i;
-	for (i=0 ; i<10 ; i++) {
+	for (i=0 ; i<11 ; i++) {
 	if (i === 9) {
 		continue;
 		} else if ($('#work li[data-id='+ i +']').css('opacity') === '1') {
@@ -723,10 +745,33 @@ $('#roadop').on('click', function(){
 	}
 });
 
+$('#roadop').on('click', function(){
+	
+	document.getElementById('counterp').innerHTML = "11/11";
+	
+	var i;
+	for (i=0 ; i<11 ; i++) {
+	if (i === 10) {
+		continue;
+		} else if ($('#work li[data-id='+ i +']').css('opacity') === '1') {
+		$('#work li[data-id=10]').css('margin-left', -60+'%');
+		$('#work li[data-id='+ i +']').animate({backgroundSize:40+'%'},{queue: false, duration:100}, 'easeOutCubic').animate({opacity:0}, {queue: false, duration:200}).animate({marginLeft:60+'%'},{queue: false, duration:400}, 'easeOutCubic');
+		$('#work li[data-id=10]').animate({marginLeft:0+'%'},{queue:false, duration:100}, 'easeOutCubic').animate({opacity:1},{queue:false, duration:200}, 'easeOutCubic').animate({backgroundSize:100+'%'},{queue: false, duration:400}, 'easeOutCubic');
+		var newprojtitleheight = $('#work li[data-id=10] .ptitle').height();
+		$('#work li[data-id='+ i +']').delay(500).animate({marginLeft:-60+'%'}, 0);
+		$('#work .text p[data-id='+ i +']').css('opacity', 0);
+		$('#work .text p[data-id='+ i +']').css('display', 'none');
+		$('#work .text p[data-id=10]').css('display', 'block');
+		$('#work .text p[data-id=10]').animate({opacity:1},{queue:false, duration:350}, 'easeOutCubic');
+		$('.pjob').css('margin-bottom', newprojtitleheight);
+		}
+	}
+});
+
  $('#nextwork').on('click', function(){
  	
  	var i;
- 	for (i = 0; i < 10; i++) {
+ 	for (i = 0; i < 11; i++) {
 		if ($('#work li[data-id='+ i +']').css('opacity') === '1') {
 			$('#work li[data-id='+ i +']').animate({backgroundSize:40+'%'},{queue: false, duration:100}, 'easeOutCubic').animate({opacity:0}, {queue: false, duration:200}).animate({marginLeft:-60+'%'},{queue: false, duration:400}, 'easeOutCubic');
 			var iplus1 = i+1;
@@ -744,7 +789,7 @@ $('#roadop').on('click', function(){
 			var iplus2 = iplus1 + 1;
 			document.getElementById('counterp').innerHTML = iplus2+"/10";
 			}
-		} else if ($('#work li[data-id=9]').css('opacity') === '1') {
+		} else if ($('#work li[data-id=11]').css('opacity') === '1') {
 			$('#work li[data-id=9]').animate({backgroundSize:40+'%'},{queue: false, duration:100}, 'easeOutCubic').animate({opacity:0}, {queue: false, duration:200}).animate({marginLeft:-60+'%'},{queue: false, duration:400}, 'easeOutCubic');
 			$('#work li[data-id=0]').animate({marginLeft:0+'%'},{queue:false, duration:100}, 'easeOutCubic').animate({opacity:1},{queue:false, duration:200}, 'easeOutCubic').animate({backgroundSize:100+'%'},{queue: false, duration:400}, 'easeOutCubic');
 			$('#work .text p[data-id=9]').css('opacity', 0);
@@ -760,7 +805,7 @@ $('#roadop').on('click', function(){
  $('#prevwork').on('click', function(){
  	
  	var i;
-	for (i = 0; i < 10; i++) {
+	for (i = 0; i < 11; i++) {
 		if ($('#work li[data-id='+ i +']').css('opacity') === '1') {
 			var iminus1 = i-1;
 			var oldprojtitleheight = $('#work li[data-id='+ iminus1 +'] .ptitle').height();
@@ -796,12 +841,12 @@ var k = 1;
 $('#then .pnext').on('click', function(){
 	
 	if (k === 8) {
-		$('#then').css('background-image', 'url("The%20Interview/1.jpg")' );
+		$('#then').css('background-image', 'url("Stiletto%20Beach/1.jpg")' );
 		k=1;
 	} else if (k !== 8) {
 			var kplus1 = k+1;
-			$('#then').css('background-image', 'url("The%20Interview/'+ kplus1 +'.jpg")' );
-			$('#then').css('background-image', 'The%20Interview/'+ kplus1 +'.jpg' );
+			$('#then').css('background-image', 'url("Stiletto%20Beach/'+ kplus1 +'.jpg")' );
+			$('#then').css('background-image', 'Stiletto%20Beach/'+ kplus1 +'.jpg' );
 			k = kplus1;
 	}
 	
@@ -813,12 +858,12 @@ $('#then .pnext').on('click', function(){
 $('#then .pprev').on('click', function(){
 	
 	if (k === 1) {
-		$('#then').css('background-image', 'url("The%20Interview/8.jpg")' );
+		$('#then').css('background-image', 'url("Stiletto%20Beach/8.jpg")' );
 		k=8;
 	} else if (k !== 1) {
 			var kminus1 = k-1;
-			$('#then').css('background-image', 'url("The%20Interview/'+ kminus1 +'.jpg")' );
-			$('#then').css('background-image', 'The%20Interview/'+ kminus1 +'.jpg' );
+			$('#then').css('background-image', 'url("Stiletto%20Beach/'+ kminus1 +'.jpg")' );
+			$('#then').css('background-image', 'Stiletto%20Beach/'+ kminus1 +'.jpg' );
 			k = kminus1;
 	}
 	
@@ -861,18 +906,18 @@ $('#now .pprev').on('click', function(){
 	$('.arrow').stop();
 });*/
 
-var n = 1;
+var l = 1;
 
 $('#project0 .pnext').on('click', function(){
 	
-	if (n === 8) {
-		$('#project0').css('background-image', 'url("Copper%20And%20Steel/1.jpg")' );
-		n=1;
-	} else if (n !== 8) {
-			var nplus1 = n+1;
-			$('#project0').css('background-image', 'url("Copper%20And%20Steel/'+ nplus1 +'.jpg")' );
-			$('#project0').css('background-image', 'Copper%20And%20Steel/'+ nplus1 +'.jpg' );
-			n = nplus1;
+	if (l === 7) {
+		$('#project0').css('background-image', 'url("Though%20She%20Be%20But%20Little%20She%20Is%20Fierce/1.jpg")' );
+		l=1;
+	} else if (l !== 7) {
+			var lplus1 = l+1;
+			$('#project0').css('background-image', 'url("Though%20She%20Be%20But%20Little%20She%20Is%20Fierce/'+ lplus1 +'.jpg")' );
+			$('#project0').css('background-image', 'Though%20She%20Be%20But%20Little%20She%20Is%20Fierce/'+ lplus1 +'.jpg' );
+			l = lplus1;
 	}
 	
 	$('.arrow').css('opacity',1);
@@ -881,13 +926,48 @@ $('#project0 .pnext').on('click', function(){
 
 $('#project0 .pprev').on('click', function(){
 	
+	if (l === 1) {
+		$('#project0').css('background-image', 'url("Though%20She%20Be%20But%20Little%20She%20Is%20Fierce/8.jpg")' );
+		l=7;
+	} else if (l !== 1) {
+			var lminus1 = l-1;
+			$('#project0').css('background-image', 'url("Though%20She%20Be%20But%20Little%20She%20Is%20Fierce/'+ lminus1 +'.jpg")' );
+			$('#project0').css('background-image', 'Though%20She%20Be%20But%20Little%20She%20Is%20Fierce/'+ lminus1 +'.jpg' );
+			l = lminus1;
+	}
+	
+	$('.arrow').css('opacity',1);
+	$('.arrow').stop();
+});
+
+
+var n = 1;
+
+$('#project1 .pnext').on('click', function(){
+	
+	if (n === 8) {
+		$('#project1').css('background-image', 'url("Copper%20And%20Steel/1.jpg")' );
+		n=1;
+	} else if (n !== 8) {
+			var nplus1 = n+1;
+			$('#project1').css('background-image', 'url("Copper%20And%20Steel/'+ nplus1 +'.jpg")' );
+			$('#project1').css('background-image', 'Copper%20And%20Steel/'+ nplus1 +'.jpg' );
+			n = nplus1;
+	}
+	
+	$('.arrow').css('opacity',1);
+	$('.arrow').stop();
+});
+
+$('#project1 .pprev').on('click', function(){
+	
 	if (n === 1) {
-		$('#project0').css('background-image', 'url("Copper%20And%20Steel/8.jpg")' );
+		$('#project1').css('background-image', 'url("Copper%20And%20Steel/8.jpg")' );
 		n=8;
 	} else if (n !== 1) {
 			var nminus1 = n-1;
-			$('#project0').css('background-image', 'url("Copper%20And%20Steel/'+ nminus1 +'.jpg")' );
-			$('#project0').css('background-image', 'Copper%20And%20Steel/'+ nminus1 +'.jpg' );
+			$('#project1').css('background-image', 'url("Copper%20And%20Steel/'+ nminus1 +'.jpg")' );
+			$('#project1').css('background-image', 'Copper%20And%20Steel/'+ nminus1 +'.jpg' );
 			n = nminus1;
 	}
 	
@@ -897,15 +977,15 @@ $('#project0 .pprev').on('click', function(){
 
 var a = 1;
 
-$('#project5 .pnext').on('click', function(){
+$('#project6 .pnext').on('click', function(){
 	
 	if (a === 7) {
-		$('#project5').css('background-image', 'url("This%20House/1.jpg")' );
+		$('#project6').css('background-image', 'url("This%20House/1.jpg")' );
 		a=1;
 	} else if (a !== 7) {
 			var aplus1 = a+1;
-			$('#project5').css('background-image', 'url("This%20House/'+ aplus1 +'.jpg")' );
-			$('#project5').css('background-image', 'This%20House/'+ aplus1 +'.jpg' );
+			$('#project6').css('background-image', 'url("This%20House/'+ aplus1 +'.jpg")' );
+			$('#project6').css('background-image', 'This%20House/'+ aplus1 +'.jpg' );
 			a = aplus1;
 	}
 	
@@ -913,15 +993,15 @@ $('#project5 .pnext').on('click', function(){
 	$('.arrow').stop();
 });
 
-$('#project5 .pprev').on('click', function(){
+$('#project6 .pprev').on('click', function(){
 	
 	if (a === 1) {
-		$('#project5').css('background-image', 'url("This%20House/7.jpg")' );
+		$('#project6').css('background-image', 'url("This%20House/7.jpg")' );
 		a=7;
 	} else if (a !== 1) {
 			var aminus1 = a-1;
-			$('#project5').css('background-image', 'url("This%20House/'+ aminus1 +'.jpg")' );
-			$('#project5').css('background-image', 'This%20House/'+ aminus1 +'.jpg' );
+			$('#project6').css('background-image', 'url("This%20House/'+ aminus1 +'.jpg")' );
+			$('#project6').css('background-image', 'This%20House/'+ aminus1 +'.jpg' );
 			a = aminus1;
 	}
 	
@@ -931,15 +1011,15 @@ $('#project5 .pprev').on('click', function(){
 
 var b = 1;
 
-$('#project6 .pnext').on('click', function(){
+$('#project7 .pnext').on('click', function(){
 	
 	if (b === 5) {
-		$('#project6').css('background-image', 'url("Mcqueen/1.jpg")' );
+		$('#project7').css('background-image', 'url("Mcqueen/1.jpg")' );
 		b=1;
 	} else if (b !== 5) {
 			var bplus1 = b+1;
-			$('#project6').css('background-image', 'url("Mcqueen/'+ bplus1 +'.jpg")' );
-			$('#project6').css('background-image', 'Mcqueen/'+ bplus1 +'.jpg' );
+			$('#project7').css('background-image', 'url("Mcqueen/'+ bplus1 +'.jpg")' );
+			$('#project7').css('background-image', 'Mcqueen/'+ bplus1 +'.jpg' );
 			b = bplus1;
 	}
 	
@@ -947,15 +1027,15 @@ $('#project6 .pnext').on('click', function(){
 	$('.arrow').stop();
 });
 
-$('#project6 .pprev').on('click', function(){
+$('#project7 .pprev').on('click', function(){
 	
 	if (b === 1) {
-		$('#project6').css('background-image', 'url("Mcqueen/5.jpg")' );
+		$('#project7').css('background-image', 'url("Mcqueen/5.jpg")' );
 		b=5;
 	} else if (b !== 1) {
 			var bminus1 = b-1;
-			$('#project6').css('background-image', 'url("Mcqueen/'+ bminus1 +'.jpg")' );
-			$('#project6').css('background-image', 'Mcqueen/'+ bminus1 +'.jpg' );
+			$('#project7').css('background-image', 'url("Mcqueen/'+ bminus1 +'.jpg")' );
+			$('#project7').css('background-image', 'Mcqueen/'+ bminus1 +'.jpg' );
 			b = bminus1;
 	}
 	
@@ -965,15 +1045,15 @@ $('#project6 .pprev').on('click', function(){
 
 var c = 1;
 
-$('#project7 .pnext').on('click', function(){
+$('#project8 .pnext').on('click', function(){
 	
 	if (c === 8) {
-		$('#project7').css('background-image', 'url("The%20Sound%20Of%20Yellow/1.jpg")' );
+		$('#project8').css('background-image', 'url("The%20Sound%20Of%20Yellow/1.jpg")' );
 		c=1;
 	} else if (c !== 8) {
 			var cplus1 = c+1;
-			$('#project7').css('background-image', 'url("The%20Sound%20Of%20Yellow/'+ cplus1 +'.jpg")' );
-			$('#project7').css('background-image', 'The%20Sound%20Of%20Yellow/'+ cplus1 +'.jpg' );
+			$('#project8').css('background-image', 'url("The%20Sound%20Of%20Yellow/'+ cplus1 +'.jpg")' );
+			$('#project8').css('background-image', 'The%20Sound%20Of%20Yellow/'+ cplus1 +'.jpg' );
 			c = cplus1;
 	}
 	
@@ -981,15 +1061,15 @@ $('#project7 .pnext').on('click', function(){
 	$('.arrow').stop();
 });
 
-$('#project7 .pprev').on('click', function(){
+$('#project8 .pprev').on('click', function(){
 	
 	if (c === 1) {
-		$('#project7').css('background-image', 'url("The%20Sound%20Of%20Yellow/8.jpg")' );
+		$('#project8').css('background-image', 'url("The%20Sound%20Of%20Yellow/8.jpg")' );
 		c=8;
 	} else if (c !== 1) {
 			var cminus1 = c-1;
-			$('#project7').css('background-image', 'url("The%20Sound%20Of%20Yellow/'+ cminus1 +'.jpg")' );
-			$('#project7').css('background-image', 'The%20Sound%20Of%20Yellow/'+ cminus1 +'.jpg' );
+			$('#project8').css('background-image', 'url("The%20Sound%20Of%20Yellow/'+ cminus1 +'.jpg")' );
+			$('#project8').css('background-image', 'The%20Sound%20Of%20Yellow/'+ cminus1 +'.jpg' );
 			c = cminus1;
 	}
 	
@@ -999,15 +1079,15 @@ $('#project7 .pprev').on('click', function(){
 
 var d = 1;
 
-$('#project8 .pnext').on('click', function(){
+$('#project9 .pnext').on('click', function(){
 	
 	if (d === 5) {
-		$('#project8').css('background-image', 'url("The%20Village/1.jpg")' );
+		$('#project9').css('background-image', 'url("The%20Village/1.jpg")' );
 		d=1;
 	} else if (d !== 5) {
 			var dplus1 = d+1;
-			$('#project8').css('background-image', 'url("The%20Village/'+ dplus1 +'.jpg")' );
-			$('#project8').css('background-image', 'The%20Village/'+ dplus1 +'.jpg' );
+			$('#project9').css('background-image', 'url("The%20Village/'+ dplus1 +'.jpg")' );
+			$('#project9').css('background-image', 'The%20Village/'+ dplus1 +'.jpg' );
 			d = dplus1;
 	}
 	
@@ -1015,14 +1095,14 @@ $('#project8 .pnext').on('click', function(){
 	$('.arrow').stop();
 });
 
-$('#project8 .pprev').on('click', function(){
+$('#project9 .pprev').on('click', function(){
 	
 	if (d === 1) {
-		$('#project8').css('background-image', 'url("The%20Village/5.jpg")' );
+		$('#project9').css('background-image', 'url("The%20Village/5.jpg")' );
 		d=5;
 	} else if (d !== 1) {
 			var dminus1 = d-1;
-			$('#project8').css('background-image', 'url("The%20Village/'+ dminus1 +'.jpg")' );
+			$('#project9').css('background-image', 'url("The%20Village/'+ dminus1 +'.jpg")' );
 			$('#project8').css('background-image', 'The%20Village/'+ dminus1 +'.jpg' );
 			d = dminus1;
 	}
@@ -1033,15 +1113,15 @@ $('#project8 .pprev').on('click', function(){
 
 var e = 1;
 
-$('#project3 .pnext').on('click', function(){
+$('#project4 .pnext').on('click', function(){
 	
 	if (e === 4) {
-		$('#project3').css('background-image', 'url("The%20H%20Word/1.jpg")' );
+		$('#project4').css('background-image', 'url("The%20H%20Word/1.jpg")' );
 		e=1;
 	} else if (e !== 4) {
 			var eplus1 = e+1;
-			$('#project3').css('background-image', 'url("The%20H%20Word/'+ eplus1 +'.jpg")' );
-			$('#project3').css('background-image', 'The%20H%20Word/'+ eplus1 +'.jpg' );
+			$('#project4').css('background-image', 'url("The%20H%20Word/'+ eplus1 +'.jpg")' );
+			$('#project4').css('background-image', 'The%20H%20Word/'+ eplus1 +'.jpg' );
 			e = eplus1;
 	}
 	
@@ -1049,15 +1129,15 @@ $('#project3 .pnext').on('click', function(){
 	$('.arrow').stop();
 });
 
-$('#project3 .pprev').on('click', function(){
+$('#project4 .pprev').on('click', function(){
 	
 	if (e === 1) {
-		$('#project3').css('background-image', 'url("The%20H%20Word/4.jpg")' );
+		$('#project4').css('background-image', 'url("The%20H%20Word/4.jpg")' );
 		e=4;
 	} else if (e !== 1) {
 			var eminus1 = e-1;
-			$('#project3').css('background-image', 'url("The%20H%20Word/'+ eminus1 +'.jpg")' );
-			$('#project3').css('background-image', 'The%20H%20Word/'+ eminus1 +'.jpg' );
+			$('#project4').css('background-image', 'url("The%20H%20Word/'+ eminus1 +'.jpg")' );
+			$('#project4').css('background-image', 'The%20H%20Word/'+ eminus1 +'.jpg' );
 			e = eminus1;
 	}
 	
@@ -1067,15 +1147,15 @@ $('#project3 .pprev').on('click', function(){
 
 var f = 1;
 
-$('#project2 .pnext').on('click', function(){
+$('#project3 .pnext').on('click', function(){
 	
 	if (f === 2) {
-		$('#project2').css('background-image', 'url("Normal/1.jpg")' );
+		$('#project3').css('background-image', 'url("Normal/1.jpg")' );
 		f=1;
 	} else if (f !== 2) {
 			var fplus1 = f+1;
-			$('#project2').css('background-image', 'url("Normal/'+ fplus1 +'.jpg")' );
-			$('#project2').css('background-image', 'Normal/'+ fplus1 +'.jpg' );
+			$('#project3').css('background-image', 'url("Normal/'+ fplus1 +'.jpg")' );
+			$('#project3').css('background-image', 'Normal/'+ fplus1 +'.jpg' );
 			f = fplus1;
 	}
 	
@@ -1083,15 +1163,15 @@ $('#project2 .pnext').on('click', function(){
 	$('.arrow').stop();
 });
 
-$('#project2 .pprev').on('click', function(){
+$('#project3 .pprev').on('click', function(){
 	
 	if (f === 1) {
-		$('#project2').css('background-image', 'url("Normal/2.jpg")' );
+		$('#project3').css('background-image', 'url("Normal/2.jpg")' );
 		f=2;
 	} else if (f !== 1) {
 			var fminus1 = f-1;
-			$('#project2').css('background-image', 'url("Normal/'+ fminus1 +'.jpg")' );
-			$('#project2').css('background-image', 'Normal/'+ fminus1 +'.jpg' );
+			$('#project3').css('background-image', 'url("Normal/'+ fminus1 +'.jpg")' );
+			$('#project3').css('background-image', 'Normal/'+ fminus1 +'.jpg' );
 			f = fminus1;
 	}
 	
@@ -1101,15 +1181,15 @@ $('#project2 .pprev').on('click', function(){
 
 var g = 1;
 
-$('#project1 .pnext').on('click', function(){
+$('#project2 .pnext').on('click', function(){
 	
 	if (g === 3) {
-		$('#project1').css('background-image', 'url("The%20PRU%20Project/1.jpg")' );
+		$('#project2').css('background-image', 'url("The%20PRU%20Project/1.jpg")' );
 		g=1;
 	} else if (g !== 3) {
 			var gplus1 = g+1;
-			$('#project1').css('background-image', 'url("The%20PRU%20Project/'+ gplus1 +'.jpg")' );
-			$('#project1').css('background-image', 'The%20PRU%20Project/'+ gplus1 +'.jpg' );
+			$('#project2').css('background-image', 'url("The%20PRU%20Project/'+ gplus1 +'.jpg")' );
+			$('#project2').css('background-image', 'The%20PRU%20Project/'+ gplus1 +'.jpg' );
 			g = gplus1;
 	}
 	
@@ -1117,15 +1197,15 @@ $('#project1 .pnext').on('click', function(){
 	$('.arrow').stop();
 });
 
-$('#project1 .pprev').on('click', function(){
+$('#project2 .pprev').on('click', function(){
 	
 	if (g === 1) {
-		$('#project1').css('background-image', 'url("The%20PRU%20Project/3.jpg")' );
+		$('#project2').css('background-image', 'url("The%20PRU%20Project/3.jpg")' );
 		g=3;
 	} else if (g !== 1) {
 			var gminus1 = g-1;
-			$('#project1').css('background-image', 'url("The%20PRU%20Project/'+ gminus1 +'.jpg")' );
-			$('#project1').css('background-image', 'The%20PRU%20Project/'+ gminus1 +'.jpg' );
+			$('#project2').css('background-image', 'url("The%20PRU%20Project/'+ gminus1 +'.jpg")' );
+			$('#project2').css('background-image', 'The%20PRU%20Project/'+ gminus1 +'.jpg' );
 			g = gminus1;
 	}
 	
@@ -1135,15 +1215,15 @@ $('#project1 .pprev').on('click', function(){
 
 var h = 1;
 
-$('#project9 .pnext').on('click', function(){
+$('#project10 .pnext').on('click', function(){
 	
 	if (h === 7) {
-		$('#project9').css('background-image', 'url("One%20For%20The%20Road/1.jpg")' );
+		$('#project10').css('background-image', 'url("One%20For%20The%20Road/1.jpg")' );
 		h=1;
 	} else if (h !== 7) {
 			var hplus1 = h+1;
-			$('#project9').css('background-image', 'url("One%20For%20The%20Road/'+ hplus1 +'.jpg")' );
-			$('#project9').css('background-image', 'One%20For%20The%20Road/'+ hplus1 +'.jpg' );
+			$('#project10').css('background-image', 'url("One%20For%20The%20Road/'+ hplus1 +'.jpg")' );
+			$('#project10').css('background-image', 'One%20For%20The%20Road/'+ hplus1 +'.jpg' );
 			h = hplus1;
 	}
 	
@@ -1151,15 +1231,15 @@ $('#project9 .pnext').on('click', function(){
 	$('.arrow').stop();
 });
 
-$('#project9 .pprev').on('click', function(){
+$('#project10 .pprev').on('click', function(){
 	
 	if (h === 1) {
-		$('#project9').css('background-image', 'url("One%20For%20The%20Road/7.jpg")' );
+		$('#project10').css('background-image', 'url("One%20For%20The%20Road/7.jpg")' );
 		h=7;
 	} else if (h !== 1) {
 			var hminus1 = h-1;
-			$('#project9').css('background-image', 'url("One%20For%20The%20Road/'+ hminus1 +'.jpg")' );
-			$('#project9').css('background-image', 'One%20For%20The%20Road/'+ hminus1 +'.jpg' );
+			$('#project10').css('background-image', 'url("One%20For%20The%20Road/'+ hminus1 +'.jpg")' );
+			$('#project10').css('background-image', 'One%20For%20The%20Road/'+ hminus1 +'.jpg' );
 			h = hminus1;
 	}
 	
@@ -1169,15 +1249,15 @@ $('#project9 .pprev').on('click', function(){
 
 var i = 1;
 
-$('#project4 .pnext').on('click', function(){
+$('#project5 .pnext').on('click', function(){
 	
 	if (i === 8) {
-		$('#project4').css('background-image', 'url("Scan%20Artists/1.jpg")' );
+		$('#project5').css('background-image', 'url("Scan%20Artists/1.jpg")' );
 		i=1;
 	} else if (i !== 8) {
 			var iplus1 = i+1;
-			$('#project4').css('background-image', 'url("Scan%20Artists/'+ iplus1 +'.jpg")' );
-			$('#project4').css('background-image', 'Scan%20Artists/'+ iplus1 +'.jpg' );
+			$('#project5').css('background-image', 'url("Scan%20Artists/'+ iplus1 +'.jpg")' );
+			$('#project5').css('background-image', 'Scan%20Artists/'+ iplus1 +'.jpg' );
 			i = iplus1;
 	}
 	
@@ -1185,15 +1265,15 @@ $('#project4 .pnext').on('click', function(){
 	$('.arrow').stop();
 });
 
-$('#project4 .pprev').on('click', function(){
+$('#project5 .pprev').on('click', function(){
 	
 	if (i === 1) {
-		$('#project4').css('background-image', 'url("Scan%20Artists/8.jpg")' );
+		$('#project5').css('background-image', 'url("Scan%20Artists/8.jpg")' );
 		i=8;
 	} else if (i !== 1) {
 			var iminus1 = i-1;
-			$('#project4').css('background-image', 'url("Scan%20Artists/'+ iminus1 +'.jpg")' );
-			$('#project4').css('background-image', 'Scan%20Artists/'+ iminus1 +'.jpg' );
+			$('#project5').css('background-image', 'url("Scan%20Artists/'+ iminus1 +'.jpg")' );
+			$('#project5').css('background-image', 'Scan%20Artists/'+ iminus1 +'.jpg' );
 			i = iminus1;
 	}
 	
@@ -1283,7 +1363,21 @@ function WidthChange(mq) {
 					document.getElementById('yellowop').innerHTML = "the sound of yellow";
 					document.getElementById('thevillageop').innerHTML = "the village";
 					document.getElementById('roadop').innerHTML = "one for the road";
+					document.getElementById('copperop').innerHTML = "copper & steel";
+					document.getElementById('fierceop').innerHTML = "though she be but little she is fierce <";
+					$('#fierceop').css({'color' : 'rgba(6,151,16,1.00)', 'font-weight':300});
+				} else if ($("#work li[data-id=0]").css('opacity') === '1') {
+					document.getElementById('normalop').innerHTML = "normal";
+					document.getElementById('pruop').innerHTML = "the pru project";
+					document.getElementById('scanartistsop').innerHTML = "scan artists";
+					document.getElementById('thehwordop').innerHTML = "the h word";
+					document.getElementById('thishouseop').innerHTML = "this house";
+					document.getElementById('mcqueenop').innerHTML = "mcqueen";
+					document.getElementById('yellowop').innerHTML = "the sound of yellow";
+					document.getElementById('thevillageop').innerHTML = "the village";
+					document.getElementById('roadop').innerHTML = "one for the road";
 					document.getElementById('copperop').innerHTML = "copper & steel <";
+					document.getElementById('fierceop').innerHTML = "though she be but little she is fierce";
 					$('#copperop').css({'color' : 'rgba(6,151,16,1.00)', 'font-weight':300});
 				} else if ($("#work li[data-id=1]").css('opacity') === '1') {
 					document.getElementById('normalop').innerHTML = "normal";
@@ -1296,6 +1390,7 @@ function WidthChange(mq) {
 					document.getElementById('thevillageop').innerHTML = "the village";
 					document.getElementById('roadop').innerHTML = "one for the road";
 					document.getElementById('copperop').innerHTML = "copper & steel";
+					document.getElementById('fierceop').innerHTML = "though she be but little she is fierce";
 					$('#pruop').css({'color' : 'rgba(6,151,16,1.00)', 'font-weight':300});
 				} else if ($("#work li[data-id=2]").css('opacity') === '1') {
 					document.getElementById('normalop').innerHTML = "normal <";
@@ -1308,6 +1403,7 @@ function WidthChange(mq) {
 					document.getElementById('thevillageop').innerHTML = "the village";
 					document.getElementById('roadop').innerHTML = "one for the road";
 					document.getElementById('copperop').innerHTML = "copper & steel";
+					document.getElementById('fierceop').innerHTML = "though she be but little she is fierce";
 					$('#normalop').css({'color' : 'rgba(6,151,16,1.00)', 'font-weight':300});
 				} else if ($("#work li[data-id=3]").css('opacity') === '1') {
 					document.getElementById('normalop').innerHTML = "normal";
@@ -1320,6 +1416,7 @@ function WidthChange(mq) {
 					document.getElementById('thevillageop').innerHTML = "the village";
 					document.getElementById('roadop').innerHTML = "one for the road";
 					document.getElementById('copperop').innerHTML = "copper & steel";
+					document.getElementById('fierceop').innerHTML = "though she be but little she is fierce";
 					$('#thehwordop').css({'color' : 'rgba(6,151,16,1.00)', 'font-weight':300});
 				} else if ($("#work li[data-id=4]").css('opacity') === '1') {
 					document.getElementById('normalop').innerHTML = "normal";
@@ -1332,6 +1429,7 @@ function WidthChange(mq) {
 					document.getElementById('thevillageop').innerHTML = "the village";
 					document.getElementById('roadop').innerHTML = "one for the road";
 					document.getElementById('copperop').innerHTML = "copper & steel";
+					document.getElementById('fierceop').innerHTML = "though she be but little she is fierce";
 					$('#scanartistsop').css({'color' : 'rgba(6,151,16,1.00)', 'font-weight':300});
 				} else if ($("#work li[data-id=5]").css('opacity') === '1') {
 					document.getElementById('normalop').innerHTML = "normal";
@@ -1344,6 +1442,7 @@ function WidthChange(mq) {
 					document.getElementById('thevillageop').innerHTML = "the village";
 					document.getElementById('roadop').innerHTML = "one for the road";
 					document.getElementById('copperop').innerHTML = "copper & steel";
+					document.getElementById('fierceop').innerHTML = "though she be but little she is fierce";
 					$('#thishouseop').css({'color' : 'rgba(6,151,16,1.00)', 'font-weight':300});
 				} else if ($("#work li[data-id=6]").css('opacity') === '1') {
 					document.getElementById('normalop').innerHTML = "normal";
@@ -1356,6 +1455,7 @@ function WidthChange(mq) {
 					document.getElementById('thevillageop').innerHTML = "the village";
 					document.getElementById('roadop').innerHTML = "one for the road";
 					document.getElementById('copperop').innerHTML = "copper & steel";
+					document.getElementById('fierceop').innerHTML = "though she be but little she is fierce";
 					$('#mcqueenop').css({'color' : 'rgba(6,151,16,1.00)', 'font-weight':300});
 				} else if ($("#work li[data-id=7]").css('opacity') === '1') {
 					document.getElementById('normalop').innerHTML = "normal";
@@ -1368,6 +1468,7 @@ function WidthChange(mq) {
 					document.getElementById('thevillageop').innerHTML = "the village";
 					document.getElementById('roadop').innerHTML = "one for the road";
 					document.getElementById('copperop').innerHTML = "copper & steel";
+					document.getElementById('fierceop').innerHTML = "though she be but little she is fierce";
 					$('#yellowop').css({'color' : 'rgba(6,151,16,1.00)', 'font-weight':300});
 				} else if ($("#work li[data-id=8]").css('opacity') === '1') {
 					document.getElementById('normalop').innerHTML = "normal";
@@ -1380,6 +1481,7 @@ function WidthChange(mq) {
 					document.getElementById('thevillageop').innerHTML = "the village <";
 					document.getElementById('roadop').innerHTML = "one for the road";
 					document.getElementById('copperop').innerHTML = "copper & steel";
+					document.getElementById('fierceop').innerHTML = "though she be but little she is fierce";
 					$('#thevillageop').css({'color' : 'rgba(6,151,16,1.00)', 'font-weight':300});
 				}  else if ($("#work li[data-id=9]").css('opacity') === '1') {
 					document.getElementById('normalop').innerHTML = "normal";
@@ -1392,6 +1494,7 @@ function WidthChange(mq) {
 					document.getElementById('thevillageop').innerHTML = "the village";
 					document.getElementById('roadop').innerHTML = "one for the road <";
 					document.getElementById('copperop').innerHTML = "copper & steel";
+					document.getElementById('fierceop').innerHTML = "though she be but little she is fierce";
 					$('#roadop').css({'color' : 'rgba(6,151,16,1.00)', 'font-weight':300});
 				}
 
