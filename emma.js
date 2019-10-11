@@ -175,7 +175,7 @@ $('.button').on('click', function(){
 		
 	} else if ($(this).is('#workb')) {
 		
-		document.getElementById('counterp').innerHTML = "1/10";
+		document.getElementById('counterp').innerHTML = "1/11";
 		var newprojtitleheight = $('#work li[data-id=0] .ptitle').height();
 		$('.pjob').css('margin-bottom', newprojtitleheight);
 	
@@ -783,21 +783,21 @@ $('#roadop').on('click', function(){
 			$('#work .text p[data-id='+ iplus1 +']').css('display', 'block');
 			$('#work .text p[data-id='+ iplus1 +']').animate({opacity:1},{queue:false, duration:350}, 'easeOutCubic');
 			$('.pjob').css('margin-bottom', newprojtitleheight);
-			if ($('#work li[data-id=9]').css('opacity') === '1') {
-				document.getElementById('counterp').innerHTML = "1/10";
+			if ($('#work li[data-id=10]').css('opacity') === '1') {
+				document.getElementById('counterp').innerHTML = "1/11";
 			} else {
 			var iplus2 = iplus1 + 1;
-			document.getElementById('counterp').innerHTML = iplus2+"/10";
+			document.getElementById('counterp').innerHTML = iplus2+"/11";
 			}
-		} else if ($('#work li[data-id=11]').css('opacity') === '1') {
-			$('#work li[data-id=9]').animate({backgroundSize:40+'%'},{queue: false, duration:100}, 'easeOutCubic').animate({opacity:0}, {queue: false, duration:200}).animate({marginLeft:-60+'%'},{queue: false, duration:400}, 'easeOutCubic');
+		} else if ($('#work li[data-id=10]').css('opacity') === '1') {
+			$('#work li[data-id=10]').animate({backgroundSize:40+'%'},{queue: false, duration:100}, 'easeOutCubic').animate({opacity:0}, {queue: false, duration:200}).animate({marginLeft:-60+'%'},{queue: false, duration:400}, 'easeOutCubic');
 			$('#work li[data-id=0]').animate({marginLeft:0+'%'},{queue:false, duration:100}, 'easeOutCubic').animate({opacity:1},{queue:false, duration:200}, 'easeOutCubic').animate({backgroundSize:100+'%'},{queue: false, duration:400}, 'easeOutCubic');
-			$('#work .text p[data-id=9]').css('opacity', 0);
-			$('#work .text p[data-id=9]').css('display', 'none');
+			$('#work .text p[data-id=10]').css('opacity', 0);
+			$('#work .text p[data-id=10]').css('display', 'none');
 			$('#work .text p[data-id=0]').css('display', 'block');
 			$('#work .text p[data-id=0]').animate({opacity:1},{queue:false, duration:350}, 'easeOutCubic');
 			$('.pjob').css('margin-bottom', $('#work li[data-id=0] .ptitle').height());
-			document.getElementById('counterp').innerHTML = "1/10";
+			document.getElementById('counterp').innerHTML = "1/11";
 		}
 	}
 });
@@ -819,19 +819,19 @@ $('#roadop').on('click', function(){
 			$('#work .text p[data-id='+ iminus1 +']').animate({opacity:1},{queue:false, duration:350}, 'easeOutCubic');
 			$('.pjob').css('margin-bottom', oldprojtitleheight);
 			if ($('#work li[data-id=0]').css('opacity') === '1') {
-				document.getElementById('counterp').innerHTML = "10/10";
+				document.getElementById('counterp').innerHTML = "11/11";
 			} else {
 			var iminus2 = iminus1 + 1;
-			document.getElementById('counterp').innerHTML = iminus2+"/10";
+			document.getElementById('counterp').innerHTML = iminus2+"/11";
 			}
 		} else if ($('#work li[data-id=0]').css('opacity') === '1') {
 			$('#work li[data-id=0]').animate({backgroundSize:40+'%'},{queue: false, duration:100}, 'easeOutCubic').animate({opacity:0}, {queue: false, duration:200}).animate({marginLeft:60+'%'},{queue: false, duration:400}, 'easeOutCubic');
-			$('#work li[data-id=9]').animate({marginLeft:0+'%'},{queue:false, duration:100}, 'easeOutCubic').animate({opacity:1},{queue:false, duration:200}, 'easeOutCubic').animate({backgroundSize:100+'%'},{queue: false, duration:400}, 'easeOutCubic');
+			$('#work li[data-id=10]').animate({marginLeft:0+'%'},{queue:false, duration:100}, 'easeOutCubic').animate({opacity:1},{queue:false, duration:200}, 'easeOutCubic').animate({backgroundSize:100+'%'},{queue: false, duration:400}, 'easeOutCubic');
 			$('#work .text p[data-id=0]').css('opacity', 0);
 			$('#work .text p[data-id=0]').css('display', 'none');
-			$('#work .text p[data-id=9]').css('display', 'block');
-			$('#work .text p[data-id=9]').animate({opacity:1},{queue:false, duration:350}, 'easeOutCubic');
-			$('.pjob').css('margin-bottom', $('#work li[data-id=9] .ptitle').height());
+			$('#work .text p[data-id=10]').css('display', 'block');
+			$('#work .text p[data-id=10]').animate({opacity:1},{queue:false, duration:350}, 'easeOutCubic');
+			$('.pjob').css('margin-bottom', $('#work li[data-id=10] .ptitle').height());
 		}
 	}
 });
